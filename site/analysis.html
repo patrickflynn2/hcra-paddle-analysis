@@ -1,0 +1,145 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HCRA Paddle Race Story</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="story-hero">
+      <nav class="site-nav" aria-label="Site">
+        <a href="analysis.html" aria-current="page">Story</a>
+        <a href="novice.html">Novice</a>
+        <a href="dqs.html">DQs</a>
+        <a href="qualification.html">Qualify</a>
+        <a href="index.html">Explorer</a>
+      </nav>
+      <div class="story-hero-text">
+        <p class="eyebrow">2023-2026 OHCRA season races</p>
+        <h1>Where Clubs Are Strongest, and Where Races Get Tight</h1>
+        <p>
+          A guided look at club strengths, division specialties, closest finishes,
+          event margins, and fastest winning times in OHCRA season-standing races.
+          MacFarlane and HCRA States are held aside for separate analysis.
+        </p>
+      </div>
+      <div class="story-stats" aria-label="Dataset summary">
+        <article>
+          <span id="story-races">0</span>
+          <small>races</small>
+        </article>
+        <article>
+          <span id="story-clubs">0</span>
+          <small>clubs</small>
+        </article>
+        <article>
+          <span id="story-events">0</span>
+          <small>events</small>
+        </article>
+      </div>
+    </header>
+
+    <main class="story-main">
+      <section class="story-section band">
+        <p class="section-kicker">Story scope</p>
+        <h2>This page now follows the OHCRA season race story.</h2>
+        <p class="story-copy" id="scope-intro"></p>
+        <div class="scope-grid" id="scope-grid"></div>
+      </section>
+
+      <section class="story-section">
+        <p class="section-kicker">Club profiles</p>
+        <h2>Which clubs are winning each program year by year?</h2>
+        <p class="story-copy" id="profile-intro"></p>
+        <div class="profile-list" id="profile-list"></div>
+      </section>
+
+      <section class="story-section band">
+        <p class="section-kicker">Podium profiles</p>
+        <h2>Which clubs are consistently reaching the podium?</h2>
+        <p class="story-copy" id="podium-profile-intro"></p>
+        <div class="profile-list" id="podium-profile-list"></div>
+      </section>
+
+      <section class="story-section">
+        <p class="section-kicker">Division specialties</p>
+        <h2>Specialization shows up when a club's points cluster in one bucket.</h2>
+        <p class="story-copy" id="specialization-intro"></p>
+        <div class="specialty-grid" id="specialty-grid"></div>
+      </section>
+
+      <section class="story-section">
+        <p class="section-kicker">Closest races</p>
+        <h2>The tightest wins came down to fractions of a second.</h2>
+        <p class="story-copy" id="closest-intro"></p>
+        <div class="table-wrap story-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Margin</th>
+                <th>Event</th>
+                <th>Race</th>
+                <th>Winner</th>
+                <th>Runner-up</th>
+              </tr>
+            </thead>
+            <tbody id="closest-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="story-section band">
+        <p class="section-kicker">Event pressure</p>
+        <h2>Average first-to-second margins reveal which events stay compressed.</h2>
+        <p class="story-copy" id="average-margin-intro"></p>
+        <div class="margin-list" id="margin-list"></div>
+      </section>
+
+      <section class="story-section">
+        <p class="section-kicker">Fastest winners</p>
+        <h2>Within the season races, fast winning times still tell a useful story.</h2>
+        <p class="story-copy" id="fastest-intro"></p>
+        <div class="table-wrap story-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Event</th>
+                <th>Fastest winner</th>
+                <th>Race</th>
+                <th>Season</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody id="fastest-body"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+
+    <div class="crew-modal" id="profile-modal" aria-hidden="true">
+      <button class="crew-modal-backdrop" type="button" data-close-profile aria-label="Close club detail"></button>
+      <section class="crew-sheet profile-sheet" role="dialog" aria-modal="true" aria-labelledby="profile-sheet-title">
+        <div class="crew-sheet-handle" aria-hidden="true"></div>
+        <div class="crew-sheet-header">
+          <div>
+            <p class="section-kicker" id="profile-sheet-kicker">Club category detail</p>
+            <h2 id="profile-sheet-title">Club</h2>
+            <p id="profile-sheet-meta"></p>
+          </div>
+          <button class="icon-close" type="button" data-close-profile aria-label="Close club detail">×</button>
+        </div>
+        <div class="profile-detail-body" id="profile-detail-body"></div>
+      </section>
+    </div>
+    <script src="analysis.js?v=refresh-2026-1198"></script>
+  </body>
+</html>
+
+
+
+
+
+
+

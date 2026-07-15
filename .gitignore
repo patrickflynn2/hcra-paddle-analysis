@@ -1,0 +1,18 @@
+﻿.venv/
+__pycache__/
+scripts/__pycache__/
+*.pyc
+.DS_Store
+
+# Keep downloaded source snapshots and large row-level outputs local.
+data/raw/html/*.html
+data/raw/standings/*.html
+data/processed/*.csv
+data/processed/*.json
+!data/raw/html/.gitkeep
+!data/processed/.gitkeep
+
+# The published static site needs these JSON files.
+site/data/*
+!site/data/.gitkeep
+!site/data/*.json

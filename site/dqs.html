@@ -1,0 +1,113 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HCRA Paddle DQ Analysis</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="story-hero dq-hero">
+      <nav class="site-nav" aria-label="Site">
+        <a href="analysis.html">Story</a>
+        <a href="novice.html">Novice</a>
+        <a href="dqs.html" aria-current="page">DQs</a>
+        <a href="qualification.html">Qualify</a>
+        <a href="index.html">Explorer</a>
+      </nav>
+      <div class="story-hero-text">
+        <p class="eyebrow">Disqualification review</p>
+        <h1>Where DQs Show Up, and Why</h1>
+        <p>
+          A focused look at disqualifications by race, club, event, and reason code.
+        </p>
+      </div>
+    </header>
+
+    <main class="story-main">
+      <section class="story-section band">
+        <p class="section-kicker">Reason code reference</p>
+        <h2>What do the DQ reason codes mean?</h2>
+        <p class="story-copy">Use this as a quick reference while reading the race, club, and reason sections below.</p>
+        <div class="table-wrap story-table dq-legend-table-wrap">
+          <table class="dq-legend-table">
+            <thead>
+              <tr>
+                <th>Code</th>
+                <th>Reason</th>
+              </tr>
+            </thead>
+            <tbody id="dq-legend-body">
+              <tr><td><strong>CLN</strong></td><td>Course lane</td></tr>
+              <tr><td><strong>COL</strong></td><td>Collision</td></tr>
+              <tr><td><strong>DNF</strong></td><td>Did not finish</td></tr>
+              <tr><td><strong>FGT</strong></td><td>Forgot requirement</td></tr>
+              <tr><td><strong>FLG</strong></td><td>Flag</td></tr>
+              <tr><td><strong>FWL</strong></td><td>False start waterline</td></tr>
+              <tr><td><strong>INT</strong></td><td>Interference</td></tr>
+              <tr><td><strong>NOS</strong></td><td>No show</td></tr>
+              <tr><td><strong>OVR</strong></td><td>Overlap</td></tr>
+              <tr><td><strong>PNE</strong></td><td>Paddler not eligible</td></tr>
+              <tr><td><strong>PNL</strong></td><td>Penalty</td></tr>
+              <tr><td><strong>RCI</strong></td><td>Race course infraction</td></tr>
+              <tr><td><strong>RCV</strong></td><td>Receiving assistance</td></tr>
+              <tr><td><strong>SWL</strong></td><td>Start waterline</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="story-section">
+        <p class="section-kicker">Race view</p>
+        <h2>Which races produced the most DQs?</h2>
+        <p class="story-copy" id="race-intro"></p>
+        <div class="dq-year-grid" id="dq-year-grid"></div>
+        <div class="dq-year-filter" id="dq-year-filter" aria-label="Filter races by year"></div>
+        <div class="dq-race-list" id="dq-race-list"></div>
+      </section>
+
+      <section class="story-section">
+        <p class="section-kicker">Club view</p>
+        <h2>Which clubs have the least amount of DQs?</h2>
+        <p class="story-copy" id="club-intro"></p>
+        <div class="dq-club-grid" id="dq-club-grid"></div>
+      </section>
+
+      <section class="story-section band">
+        <p class="section-kicker">Reason analysis</p>
+        <h2>What reason codes are driving the DQ count?</h2>
+        <p class="story-copy" id="reason-intro"></p>
+        <div class="dq-reason-list" id="dq-reason-list"></div>
+      </section>
+
+      <section class="story-section">
+        <p class="section-kicker">Outrigger 2026 season</p>
+        <h2>Outrigger's 2026 DQs - Can we stay perfect in Ke`ehi Lagoon?</h2>
+        <p class="story-copy" id="outrigger-intro"></p>
+        <div class="outrigger-season-grid" id="outrigger-season-grid"></div>
+        <div class="table-wrap story-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Race</th>
+                <th>Event</th>
+                <th>Reason</th>
+                <th>Time</th>
+              </tr>
+            </thead>
+            <tbody id="outrigger-records"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="dqs.js?v=dq-refresh-2026-1198"></script>
+  </body>
+</html>
+
+
+
+
+
+
+

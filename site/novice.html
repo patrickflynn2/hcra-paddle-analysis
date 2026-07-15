@@ -1,0 +1,128 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HCRA Novice Story</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="story-hero novice-hero">
+      <nav class="site-nav" aria-label="Site">
+        <a href="analysis.html">Story</a>
+        <a href="novice.html" aria-current="page">Novice</a>
+        <a href="dqs.html">DQs</a>
+        <a href="qualification.html">Qualify</a>
+        <a href="index.html">Explorer</a>
+      </nav>
+      <div class="story-hero-text">
+        <p class="eyebrow">Novice A and B</p>
+        <h1>How Hard Was It to Be the Fastest Novice Boat?</h1>
+        <p id="novice-hero-copy">
+          A year-by-year read on Men and Women Novice A/B competitiveness,
+          plus a roster-based look at who looks like first-year or second-year Novice A this season.
+          This view uses OHCRA season-standing races only.
+        </p>
+      </div>
+    </header>
+
+    <main class="story-main">
+      <section class="story-section">
+        <p class="section-kicker">2025 Men Novice B</p>
+        <h2 id="men-b-headline">Was 2025 an easy year to be the fastest Men Novice B boat?</h2>
+        <p class="story-copy" id="men-b-story"></p>
+        <div class="callout-grid" id="men-b-callouts"></div>
+      </section>
+
+      <section class="story-section band">
+        <p class="section-kicker">Year by year</p>
+        <h2>Competitiveness shows up in field size, margins, and whether one club sweeps the year.</h2>
+        <p class="story-copy">
+          Winning time is shown, but margins and entries are the better comparison across regattas because course length and conditions vary. Walter J. MacFarlane and HCRA State Championship results are excluded here and preserved for separate analysis.
+        </p>
+        <div class="novice-event-stack" id="novice-event-stack"></div>
+      </section>
+
+      <section class="story-section">
+        <p class="section-kicker">This season's Novice A rosters</p>
+        <h2>Which 2026 Novice A crews look first-year versus second-year?</h2>
+        <p class="story-copy" id="roster-story"></p>
+        <div class="legend-row">
+          <span><i class="legend first"></i> First-year A signal</span>
+          <span><i class="legend second"></i> Second-year A signal</span>
+          <span><i class="legend history"></i> Older novice history</span>
+          <span><i class="legend unknown"></i> Unknown</span>
+        </div>
+        <div class="roster-team-grid" id="roster-team-grid"></div>
+      </section>
+
+      <section class="story-section band">
+        <p class="section-kicker">Race evidence</p>
+        <h2>Entry-by-entry roster composition makes the inference auditable.</h2>
+        <p class="story-copy">
+          A paddler is counted as first-year Novice A if they appeared in same-gender Novice B in 2025, and second-year Novice A if they appeared in same-gender Novice A in 2025.
+        </p>
+                <div class="evidence-filters" aria-label="Race evidence filters">
+          <label>
+            Gender
+            <select id="evidence-gender-filter">
+              <option value="all">All genders</option>
+            </select>
+          </label>
+          <label>
+            Club
+            <select id="evidence-club-filter">
+              <option value="all">All clubs</option>
+            </select>
+          </label>
+          <label>
+            Place
+            <select id="evidence-place-filter">
+              <option value="all">All places</option>
+            </select>
+          </label>
+        </div>
+        <p class="evidence-count" id="evidence-count"></p>
+        <div class="table-wrap story-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Event</th>
+                <th>Race</th>
+                <th>Club</th>
+                <th>Place</th>
+                <th>1st-year A</th>
+                <th>2nd-year A</th>
+                <th>Unknown</th>
+                <th>Crew</th>
+              </tr>
+            </thead>
+            <tbody id="roster-entry-body"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <div class="crew-modal" id="crew-modal" aria-hidden="true">
+      <button class="crew-modal-backdrop" type="button" data-close-crew aria-label="Close crew detail"></button>
+      <section class="crew-sheet" role="dialog" aria-modal="true" aria-labelledby="crew-sheet-title">
+        <div class="crew-sheet-handle" aria-hidden="true"></div>
+        <div class="crew-sheet-header">
+          <div>
+            <p class="section-kicker" id="crew-sheet-kicker">Crew detail</p>
+            <h2 id="crew-sheet-title">Crew</h2>
+            <p id="crew-sheet-meta"></p>
+          </div>
+          <button class="icon-close" type="button" data-close-crew aria-label="Close crew detail">Ã—</button>
+        </div>
+        <div class="crew-group-list" id="crew-group-list"></div>
+      </section>
+    </div>
+
+    <script src="novice.js?v=novice-filters1"></script>
+  </body>
+</html>
+
+
+
+

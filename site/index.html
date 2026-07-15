@@ -1,0 +1,88 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HCRA Paddle Race Analysis</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div>
+        <p class="eyebrow">HCRA race results</p>
+        <h1>Paddle Performance Explorer</h1>
+      </div>
+      <nav class="site-nav compact" aria-label="Site">
+        <a href="analysis.html">Story</a>
+        <a href="novice.html">Novice</a>
+        <a href="dqs.html">DQs</a>
+        <a href="qualification.html">Qualify</a>
+        <a href="index.html" aria-current="page">Explorer</a>
+      </nav>
+      <div class="metric">
+        <span id="race-count">0</span>
+        <small>races</small>
+      </div>
+    </header>
+
+    <main>
+      <section class="controls" aria-label="Filters">
+        <label>
+          Season
+          <select id="season-filter">
+            <option value="all">All seasons</option>
+          </select>
+        </label>
+        <label>
+          Club
+          <select id="club-filter">
+            <option value="all">All clubs</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="summary-grid" aria-label="Summary metrics">
+        <article>
+          <span id="entry-count">0</span>
+          <small>entries</small>
+        </article>
+        <article>
+          <span id="club-count">0</span>
+          <small>clubs</small>
+        </article>
+        <article>
+          <span id="event-count">0</span>
+          <small>event types</small>
+        </article>
+      </section>
+
+      <section class="table-section">
+        <div class="section-header">
+          <h2>Top Point Results</h2>
+          <p id="status">Loading data...</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Race</th>
+                <th>Event</th>
+                <th>Club</th>
+                <th>Place</th>
+                <th>Time</th>
+                <th>Pts</th>
+              </tr>
+            </thead>
+            <tbody id="results-body"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js?v=refresh-2026-1198"></script>
+  </body>
+</html>
+
+
+
+

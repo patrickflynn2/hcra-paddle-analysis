@@ -1,0 +1,6193 @@
+{
+  "metadata": {
+    "current_season": 2026,
+    "prior_season": 2025,
+    "events": [
+      "Men Novice A",
+      "Men Novice B",
+      "Women Novice A",
+      "Women Novice B"
+    ],
+    "scope": "OHCRA season-standing races only",
+    "source_rows": 12658,
+    "source_races": 30,
+    "rows": 9621,
+    "races": 23,
+    "excluded_special_races": [
+      {
+        "race_id": "932",
+        "season": 2023,
+        "race_name": "Walter J MacFarlane Regatta",
+        "race_type": "macfarlane",
+        "rows": 318
+      },
+      {
+        "race_id": "1011",
+        "season": 2024,
+        "race_name": "Walter J. MacFarlane Regatta",
+        "race_type": "macfarlane",
+        "rows": 324
+      },
+      {
+        "race_id": "995",
+        "season": 2024,
+        "race_name": "2023 HCRA State Championship",
+        "race_type": "states",
+        "rows": 575
+      },
+      {
+        "race_id": "997",
+        "season": 2024,
+        "race_name": "2024 HCRA State Championship",
+        "race_type": "states",
+        "rows": 606
+      },
+      {
+        "race_id": "1086",
+        "season": 2025,
+        "race_name": "Walter J. MacFarlane Regatta",
+        "race_type": "macfarlane",
+        "rows": 317
+      },
+      {
+        "race_id": "1167",
+        "season": 2025,
+        "race_name": "HCRA State Championship",
+        "race_type": "states",
+        "rows": 571
+      },
+      {
+        "race_id": "1197",
+        "season": 2026,
+        "race_name": "Walter J. MacFarlane Regatta",
+        "race_type": "macfarlane",
+        "rows": 326
+      }
+    ],
+    "classification_notes": {
+      "first_year_a": "Appeared in the same-gender Novice B roster in 2025.",
+      "second_year_a": "Appeared in the same-gender Novice A roster in 2025.",
+      "prior_a_history": "Appeared in same-gender Novice A before 2025.",
+      "prior_b_history": "Appeared in same-gender Novice B before 2025.",
+      "unknown": "No same-gender novice history found in the downloaded roster data."
+    }
+  },
+  "season_competitiveness": {
+    "Men Novice A": [
+      {
+        "event": "Men Novice A",
+        "season": 2023,
+        "races": 6,
+        "entries": 61,
+        "average_entries": 10.2,
+        "clubs": 12,
+        "average_winning_time_seconds": 232.96,
+        "average_margin_seconds": 3.89,
+        "closest_margin_seconds": 0.77,
+        "most_wins_club": "Hui Nalu Canoe Club",
+        "most_wins": 3,
+        "fastest_winner": {
+          "race_id": "933",
+          "race_name": "John D. Kaupiko Regatta",
+          "season": 2023,
+          "winner": "Hui Nalu Canoe Club",
+          "winning_time": "3:36.86",
+          "winning_time_seconds": 216.86,
+          "runner_up": "Lanikai Canoe Club",
+          "runner_up_time": "3:42.50",
+          "margin_seconds": 5.64,
+          "entries": 9
+        },
+        "closest_race": {
+          "race_id": "934",
+          "race_name": "OHCRA Championships",
+          "season": 2023,
+          "winner": "Lanikai Canoe Club",
+          "winning_time": "3:50.44",
+          "winning_time_seconds": 230.44,
+          "runner_up": "Hui Nalu Canoe Club",
+          "runner_up_time": "3:51.21",
+          "margin_seconds": 0.77,
+          "entries": 9
+        },
+        "deepest_race": {
+          "race_id": "928",
+          "race_name": "Clement D. Pai`aina Regatta",
+          "season": 2023,
+          "winner": "Hui Nalu Canoe Club",
+          "winning_time": "3:48.37",
+          "winning_time_seconds": 228.37,
+          "runner_up": "Lanikai Canoe Club",
+          "runner_up_time": "3:49.77",
+          "margin_seconds": 1.4,
+          "entries": 12
+        }
+      },
+      {
+        "event": "Men Novice A",
+        "season": 2024,
+        "races": 6,
+        "entries": 61,
+        "average_entries": 10.2,
+        "clubs": 11,
+        "average_winning_time_seconds": 230.32,
+        "average_margin_seconds": 4.46,
+        "closest_margin_seconds": 1.72,
+        "most_wins_club": "Lanikai Canoe Club",
+        "most_wins": 5,
+        "fastest_winner": {
+          "race_id": "1013",
+          "race_name": "OHCRA Championships",
+          "season": 2024,
+          "winner": "Lanikai Canoe Club",
+          "winning_time": "3:39.59",
+          "winning_time_seconds": 219.59,
+          "runner_up": "Kai Oni Canoe Club",
+          "runner_up_time": "3:41.31",
+          "margin_seconds": 1.72,
+          "entries": 10
+        },
+        "closest_race": {
+          "race_id": "1013",
+          "race_name": "OHCRA Championships",
+          "season": 2024,
+          "winner": "Lanikai Canoe Club",
+          "winning_time": "3:39.59",
+          "winning_time_seconds": 219.59,
+          "runner_up": "Kai Oni Canoe Club",
+          "runner_up_time": "3:41.31",
+          "margin_seconds": 1.72,
+          "entries": 10
+        },
+        "deepest_race": {
+          "race_id": "1007",
+          "race_name": "Clement D. Pai`aina Regatta",
+          "season": 2024,
+          "winner": "Lanikai Canoe Club",
+          "winning_time": "3:50.86",
+          "winning_time_seconds": 230.86,
+          "runner_up": "Kai Oni Canoe Club",
+          "runner_up_time": "3:53.02",
+          "margin_seconds": 2.16,
+          "entries": 11
+        }
+      },
+      {
+        "event": "Men Novice A",
+        "season": 2025,
+        "races": 6,
+        "entries": 68,
+        "average_entries": 11.3,
+        "clubs": 12,
+        "average_winning_time_seconds": 232.66,
+        "average_margin_seconds": 1.84,
+        "closest_margin_seconds": 0.66,
+        "most_wins_club": "Kai Oni Canoe Club",
+        "most_wins": 4,
+        "fastest_winner": {
+          "race_id": "1088",
+          "race_name": "OHCRA Championship Regatta",
+          "season": 2025,
+          "winner": "Kailua Canoe Club",
+          "winning_time": "3:43.21",
+          "winning_time_seconds": 223.21,
+          "runner_up": "Lanikai Canoe Club",
+          "runner_up_time": "3:44.14",
+          "margin_seconds": 0.93,
+          "entries": 11
+        },
+        "closest_race": {
+          "race_id": "1084",
+          "race_name": "Father`s Day Regatta",
+          "season": 2025,
+          "winner": "Kai Oni Canoe Club",
+          "winning_time": "3:46.35",
+          "winning_time_seconds": 226.35,
+          "runner_up": "Kailua Canoe Club",
+          "runner_up_time": "3:47.01",
+          "margin_seconds": 0.66,
+          "entries": 11
+        },
+        "deepest_race": {
+          "race_id": "1082",
+          "race_name": "Clement D. Pai`aina Regatta",
+          "season": 2025,
+          "winner": "Kai Oni Canoe Club",
+          "winning_time": "3:48.13",
+          "winning_time_seconds": 228.13,
+          "runner_up": "Kailua Canoe Club",
+          "runner_up_time": "3:50.31",
+          "margin_seconds": 2.18,
+          "entries": 12
+        }
+      },
+      {
+        "event": "Men Novice A",
+        "season": 2026,
+        "races": 5,
+        "entries": 56,
+        "average_entries": 11.2,
+        "clubs": 14,
+        "average_winning_time_seconds": 238.16,
+        "average_margin_seconds": 2.1,
+        "closest_margin_seconds": 1.07,
+        "most_wins_club": "Outrigger Canoe Club",
+        "most_wins": 4,
+        "fastest_winner": {
+          "race_id": "1195",
+          "race_name": "Father`s Day Regatta",
+          "season": 2026,
+          "winner": "Lanikai Canoe Club",
+          "winning_time": "3:45.69",
+          "winning_time_seconds": 225.69,
+          "runner_up": "Outrigger Canoe Club",
+          "runner_up_time": "3:46.92",
+          "margin_seconds": 1.23,
+          "entries": 11
+        },
+        "closest_race": {
+          "race_id": "1198",
+          "race_name": "John D. Kaupiko Regatta",
+          "season": 2026,
+          "winner": "Outrigger Canoe Club",
+          "winning_time": "3:52.80",
+          "winning_time_seconds": 232.8,
+          "runner_up": "Kailua Canoe Club",
+          "runner_up_time": "3:53.87",
+          "margin_seconds": 1.07,
+          "entries": 9
+        },
+        "deepest_race": {
+          "race_id": "1193",
+          "race_name": "Clement D. Pai`aina Regatta",
+          "season": 2026,
+          "winner": "Outrigger Canoe Club",
+          "winning_time": "4:01.35",
+          "winning_time_seconds": 241.35,
+          "runner_up": "Lanikai Canoe Club",
+          "runner_up_time": "4:06.96",
+          "margin_seconds": 5.61,
+          "entries": 13
+        }
+      }
+    ],
+    "Men Novice B": [
+      {
+        "event": "Men Novice B",
+        "season": 2023,
+        "races": 6,
+        "entries": 49,
+        "average_entries": 8.2,
+        "clubs": 10,
+        "average_winning_time_seconds": 242.51,
+        "average_margin_seconds": 3.6,
+        "closest_margin_seconds": 0.48,
+        "most_wins_club": "Lanikai Canoe Club",
+        "most_wins": 4,
+        "fastest_winner": {
+          "race_id": "933",
+          "race_name": "John D. Kaupiko Regatta",
+          "season": 2023,
+          "winner": "Lanikai Canoe Club",
+          "winning_time": "3:46.37",
+          "winning_time_seconds": 226.37,
+          "runner_up": "Kailua Canoe Club",
+          "runner_up_time": "3:50.28",
+          "margin_seconds": 3.91,
+          "entries": 7
+        },
+        "closest_race": {
+          "race_id": "931",
+          "race_name": "Waimanalo Regatta",
+          "season": 2023,
+          "winner": "Lanikai Canoe Club",
+          "winning_time": "4:18.74",
+          "winning_time_seconds": 258.74,
+          "runner_up": "Hui Nalu Canoe Club",
+          "runner_up_time": "4:19.22",
+          "margin_seconds": 0.48,
+          "entries": 8
+        },
+        "deepest_race": {
+          "race_id": "928",
+          "race_name": "Clement D. Pai`aina Regatta",
+          "season": 2023,
+          "winner": "Kailua Canoe Club",
+          "winning_time": "3:53.94",
+          "winning_time_seconds": 233.94,
+          "runner_up": "Outrigger Canoe Club",
+          "runner_up_time": "3:58.74",
+          "margin_seconds": 4.8,
+          "entries": 10
+        }
+      },
+      {
+        "event": "Men Novice B",
+        "season": 2024,
+        "races": 6,
+        "entries": 66,
+        "average_entries": 11.0,
+        "clubs": 12,
+        "average_winning_time_seconds": 111.9,
+        "average_margin_seconds": 3.17,
+        "closest_margin_seconds": 0.55,
+        "most_wins_club": "Outrigger Canoe Club",
+        "most_wins": 3,
+        "fastest_winner": {
+          "race_id": "1009",
+          "race_name": "Father`s Day Regatta",
+          "season": 2024,
+          "winner": "Outrigger Canoe Club",
+          "winning_time": "1:43.36",
+          "winning_time_seconds": 103.36,
+          "runner_up": "Keahiakahoe Canoe Club",
+          "runner_up_time": "1:45.07",
+          "margin_seconds": 1.71,
+          "entries": 11
+        },
+        "closest_race": {
+          "race_id": "1010",
+          "race_name": "Waimanalo Regatta",
+          "season": 2024,
+          "winner": "Lanikai Canoe Club",
+          "winning_time": "1:48.82",
+          "winning_time_seconds": 108.82,
+          "runner_up": "Outrigger Canoe Club",
+          "runner_up_time": "1:49.37",
+          "margin_seconds": 0.55,
+          "entries": 12
+        },
+        "deepest_race": {
+          "race_id": "1008",
+          "race_name": "King Kamehameha Day Regatta",
+          "season": 2024,
+          "winner": "Anuenue Canoe Club",
+          "winning_time": "2:02.44",
+          "winning_time_seconds": 122.44,
+          "runner_up": "Outrigger Canoe Club",
+          "runner_up_time": "2:06.58",
+          "margin_seconds": 4.14,
+          "entries": 12
+        }
+      },
+      {
+        "event": "Men Novice B",
+        "season": 2025,
+        "races": 6,
+        "entries": 71,
+        "average_entries": 11.8,
+        "clubs": 13,
+        "average_winning_time_seconds": 106.53,
+        "average_margin_seconds": 2.04,
+        "closest_margin_seconds": 0.62,
+        "most_wins_club": "Outrigger Canoe Club",
+        "most_wins": 6,
+        "fastest_winner": {
+          "race_id": "1082",
+          "race_name": "Clement D. Pai`aina Regatta",
+          "season": 2025,
+          "winner": "Outrigger Canoe Club",
+          "winning_time": "1:41.76",
+          "winning_time_seconds": 101.75999999999999,
+          "runner_up": "Kailua Canoe Club",
+          "runner_up_time": "1:43.06",
+          "margin_seconds": 1.3,
+          "entries": 11
+        },
+        "closest_race": {
+          "race_id": "1084",
+          "race_name": "Father`s Day Regatta",
+          "season": 2025,
+          "winner": "Outrigger Canoe Club",
+          "winning_time": "1:46.03",
+          "winning_time_seconds": 106.03,
+          "runner_up": "Kailua Canoe Club",
+          "runner_up_time": "1:46.65",
+          "margin_seconds": 0.62,
+          "entries": 11
+        },
+        "deepest_race": {
+          "race_id": "1087",
+          "race_name": "John D. Kaupiko Regatta",
+          "season": 2025,
+          "winner": "Outrigger Canoe Club",
+          "winning_time": "1:49.47",
+          "winning_time_seconds": 109.47,
+          "runner_up": "Kailua Canoe Club",
+          "runner_up_time": "1:50.30",
+          "margin_seconds": 0.83,
+          "entries": 13
+        }
+      },
+      {
+        "event": "Men Novice B",
+        "season": 2026,
+        "races": 5,
+        "entries": 60,
+        "average_entries": 12.0,
+        "clubs": 13,
+        "average_winning_time_seconds": 109.17,
+        "average_margin_seconds": 2.92,
+        "closest_margin_seconds": 0.47,
+        "most_wins_club": "Lanikai Canoe Club",
+        "most_wins": 3,
+        "fastest_winner": {
+          "race_id": "1196",
+          "race_name": "Waimanalo Regatta",
+          "season": 2026,
+          "winner": "Lanikai Canoe Club",
+          "winning_time": "1:40.67",
+          "winning_time_seconds": 100.67,
+          "runner_up": "Outrigger Canoe Club",
+          "runner_up_time": "1:41.38",
+          "margin_seconds": 0.71,
+          "entries": 13
+        },
+        "closest_race": {
+          "race_id": "1193",
+          "race_name": "Clement D. Pai`aina Regatta",
+          "season": 2026,
+          "winner": "Kailua Canoe Club",
+          "winning_time": "1:59.52",
+          "winning_time_seconds": 119.52000000000001,
+          "runner_up": "Lanikai Canoe Club",
+          "runner_up_time": "1:59.99",
+          "margin_seconds": 0.47,
+          "entries": 12
+        },
+        "deepest_race": {
+          "race_id": "1195",
+          "race_name": "Father`s Day Regatta",
+          "season": 2026,
+          "winner": "Hui Nalu Canoe Club",
+          "winning_time": "1:44.09",
+          "winning_time_seconds": 104.09,
+          "runner_up": "Lanikai Canoe Club",
+          "runner_up_time": "1:45.95",
+          "margin_seconds": 1.86,
+          "entries": 13
+        }
+      }
+    ],
+    "Women Novice A": [
+      {
+        "event": "Women Novice A",
+        "season": 2023,
+        "races": 6,
+        "entries": 67,
+        "average_entries": 11.2,
+        "clubs": 13,
+        "average_winning_time_seconds": 270.65,
+        "average_margin_seconds": 3.64,
+        "closest_margin_seconds": 0.94,
+        "most_wins_club": "Lanikai Canoe Club",
+        "most_wins": 4,
+        "fastest_winner": {
+          "race_id": "933",
+          "race_name": "John D. Kaupiko Regatta",
+          "season": 2023,
+          "winner": "Lanikai Canoe Club",
+          "winning_time": "4:08.89",
+          "winning_time_seconds": 248.89,
+          "runner_up": "Keahiakahoe Canoe Club",
+          "runner_up_time": "4:11.98",
+          "margin_seconds": 3.09,
+          "entries": 11
+        },
+        "closest_race": {
+          "race_id": "929",
+          "race_name": "King Kamehameha Day Regatta",
+          "season": 2023,
+          "winner": "Outrigger Canoe Club",
+          "winning_time": "4:52.66",
+          "winning_time_seconds": 292.65999999999997,
+          "runner_up": "Lanikai Canoe Club",
+          "runner_up_time": "4:53.60",
+          "margin_seconds": 0.94,
+          "entries": 12
+        },
+        "deepest_race": {
+          "race_id": "928",
+          "race_name": "Clement D. Pai`aina Regatta",
+          "season": 2023,
+          "winner": "Outrigger Canoe Club",
+          "winning_time": "4:25.58",
+          "winning_time_seconds": 265.58,
+          "runner_up": "Kailua Canoe Club",
+          "runner_up_time": "4:36.22",
+          "margin_seconds": 10.64,
+          "entries": 13
+        }
+      },
+      {
+        "event": "Women Novice A",
+        "season": 2024,
+        "races": 6,
+        "entries": 70,
+        "average_entries": 11.7,
+        "clubs": 13,
+        "average_winning_time_seconds": 271.92,
+        "average_margin_seconds": 4.96,
+        "closest_margin_seconds": 0.42,
+        "most_wins_club": "Outrigger Canoe Club",
+        "most_wins": 3,
+        "fastest_winner": {
+          "race_id": "1013",
+          "race_name": "OHCRA Championships",
+          "season": 2024,
+          "winner": "Outrigger Canoe Club",
+          "winning_time": "4:14.59",
+          "winning_time_seconds": 254.59,
+          "runner_up": "Hui Nalu Canoe Club",
+          "runner_up_time": "4:19.64",
+          "margin_seconds": 5.05,
+          "entries": 11
+        },
+        "closest_race": {
+          "race_id": "1009",
+          "race_name": "Father`s Day Regatta",
+          "season": 2024,
+          "winner": "Waikiki Surf Club",
+          "winning_time": "4:35.53",
+          "winning_time_seconds": 275.53,
+          "runner_up": "Kailua Canoe Club",
+          "runner_up_time": "4:35.95",
+          "margin_seconds": 0.42,
+          "entries": 12
+        },
+        "deepest_race": {
+          "race_id": "1008",
+          "race_name": "King Kamehameha Day Regatta",
+          "season": 2024,
+          "winner": "Outrigger Canoe Club",
+          "winning_time": "4:34.77",
+          "winning_time_seconds": 274.77,
+          "runner_up": "Kailua Canoe Club",
+          "runner_up_time": "4:43.75",
+          "margin_seconds": 8.98,
+          "entries": 13
+        }
+      },
+      {
+        "event": "Women Novice A",
+        "season": 2025,
+        "races": 6,
+        "entries": 80,
+        "average_entries": 13.3,
+        "clubs": 15,
+        "average_winning_time_seconds": 267.93,
+        "average_margin_seconds": 4.57,
+        "closest_margin_seconds": 0.26,
+        "most_wins_club": "Outrigger Canoe Club",
+        "most_wins": 5,
+        "fastest_winner": {
+          "race_id": "1088",
+          "race_name": "OHCRA Championship Regatta",
+          "season": 2025,
+          "winner": "Outrigger Canoe Club",
+          "winning_time": "4:14.29",
+          "winning_time_seconds": 254.29,
+          "runner_up": "Keahiakahoe Canoe Club",
+          "runner_up_time": "4:19.26",
+          "margin_seconds": 4.97,
+          "entries": 13
+        },
+        "closest_race": {
+          "race_id": "1083",
+          "race_name": "King Kamehameha Day Regatta",
+          "season": 2025,
+          "winner": "Outrigger Canoe Club",
+          "winning_time": "4:33.87",
+          "winning_time_seconds": 273.87,
+          "runner_up": "Lanikai Canoe Club",
+          "runner_up_time": "4:34.13",
+          "margin_seconds": 0.26,
+          "entries": 14
+        },
+        "deepest_race": {
+          "race_id": "1082",
+          "race_name": "Clement D. Pai`aina Regatta",
+          "season": 2025,
+          "winner": "Outrigger Canoe Club",
+          "winning_time": "4:17.55",
+          "winning_time_seconds": 257.55,
+          "runner_up": "Keahiakahoe Canoe Club",
+          "runner_up_time": "4:29.43",
+          "margin_seconds": 11.88,
+          "entries": 14
+        }
+      },
+      {
+        "event": "Women Novice A",
+        "season": 2026,
+        "races": 5,
+        "entries": 58,
+        "average_entries": 11.6,
+        "clubs": 13,
+        "average_winning_time_seconds": 270.81,
+        "average_margin_seconds": 2.84,
+        "closest_margin_seconds": 0.52,
+        "most_wins_club": "Lanikai Canoe Club",
+        "most_wins": 2,
+        "fastest_winner": {
+          "race_id": "1195",
+          "race_name": "Father`s Day Regatta",
+          "season": 2026,
+          "winner": "Hui Nalu Canoe Club",
+          "winning_time": "4:16.71",
+          "winning_time_seconds": 256.71,
+          "runner_up": "Lanikai Canoe Club",
+          "runner_up_time": "4:20.91",
+          "margin_seconds": 4.2,
+          "entries": 11
+        },
+        "closest_race": {
+          "race_id": "1198",
+          "race_name": "John D. Kaupiko Regatta",
+          "season": 2026,
+          "winner": "Hui Nalu Canoe Club",
+          "winning_time": "4:27.83",
+          "winning_time_seconds": 267.83,
+          "runner_up": "Kailua Canoe Club",
+          "runner_up_time": "4:28.35",
+          "margin_seconds": 0.52,
+          "entries": 10
+        },
+        "deepest_race": {
+          "race_id": "1193",
+          "race_name": "Clement D. Pai`aina Regatta",
+          "season": 2026,
+          "winner": "Kailua Canoe Club",
+          "winning_time": "4:30.63",
+          "winning_time_seconds": 270.63,
+          "runner_up": "Hui Nalu Canoe Club",
+          "runner_up_time": "4:32.90",
+          "margin_seconds": 2.27,
+          "entries": 13
+        }
+      }
+    ],
+    "Women Novice B": [
+      {
+        "event": "Women Novice B",
+        "season": 2023,
+        "races": 6,
+        "entries": 71,
+        "average_entries": 11.8,
+        "clubs": 13,
+        "average_winning_time_seconds": 130.34,
+        "average_margin_seconds": 8.76,
+        "closest_margin_seconds": 5.54,
+        "most_wins_club": "Lanikai Canoe Club",
+        "most_wins": 6,
+        "fastest_winner": {
+          "race_id": "931",
+          "race_name": "Waimanalo Regatta",
+          "season": 2023,
+          "winner": "Lanikai Canoe Club",
+          "winning_time": "2:00.45",
+          "winning_time_seconds": 120.45,
+          "runner_up": "Hui Nalu Canoe Club",
+          "runner_up_time": "2:11.20",
+          "margin_seconds": 10.75,
+          "entries": 13
+        },
+        "closest_race": {
+          "race_id": "933",
+          "race_name": "John D. Kaupiko Regatta",
+          "season": 2023,
+          "winner": "Lanikai Canoe Club",
+          "winning_time": "2:06.33",
+          "winning_time_seconds": 126.33,
+          "runner_up": "Hui Nalu Canoe Club",
+          "runner_up_time": "2:11.87",
+          "margin_seconds": 5.54,
+          "entries": 12
+        },
+        "deepest_race": {
+          "race_id": "931",
+          "race_name": "Waimanalo Regatta",
+          "season": 2023,
+          "winner": "Lanikai Canoe Club",
+          "winning_time": "2:00.45",
+          "winning_time_seconds": 120.45,
+          "runner_up": "Hui Nalu Canoe Club",
+          "runner_up_time": "2:11.20",
+          "margin_seconds": 10.75,
+          "entries": 13
+        }
+      },
+      {
+        "event": "Women Novice B",
+        "season": 2024,
+        "races": 6,
+        "entries": 61,
+        "average_entries": 10.2,
+        "clubs": 12,
+        "average_winning_time_seconds": 124.16,
+        "average_margin_seconds": 6.5,
+        "closest_margin_seconds": 0.76,
+        "most_wins_club": "Lanikai Canoe Club",
+        "most_wins": 3,
+        "fastest_winner": {
+          "race_id": "1007",
+          "race_name": "Clement D. Pai`aina Regatta",
+          "season": 2024,
+          "winner": "Lanikai Canoe Club",
+          "winning_time": "1:37.28",
+          "winning_time_seconds": 97.28,
+          "runner_up": "Waikiki Surf Club",
+          "runner_up_time": "1:46.05",
+          "margin_seconds": 8.77,
+          "entries": 10
+        },
+        "closest_race": {
+          "race_id": "1010",
+          "race_name": "Waimanalo Regatta",
+          "season": 2024,
+          "winner": "Waikiki Surf Club",
+          "winning_time": "2:05.53",
+          "winning_time_seconds": 125.53,
+          "runner_up": "Lanikai Canoe Club",
+          "runner_up_time": "2:06.29",
+          "margin_seconds": 0.76,
+          "entries": 11
+        },
+        "deepest_race": {
+          "race_id": "1008",
+          "race_name": "King Kamehameha Day Regatta",
+          "season": 2024,
+          "winner": "Lanikai Canoe Club",
+          "winning_time": "2:21.52",
+          "winning_time_seconds": 141.52,
+          "runner_up": "Anuenue Canoe Club",
+          "runner_up_time": "2:28.00",
+          "margin_seconds": 6.48,
+          "entries": 12
+        }
+      },
+      {
+        "event": "Women Novice B",
+        "season": 2025,
+        "races": 6,
+        "entries": 81,
+        "average_entries": 13.5,
+        "clubs": 14,
+        "average_winning_time_seconds": 130.19,
+        "average_margin_seconds": 5.13,
+        "closest_margin_seconds": 0.26,
+        "most_wins_club": "Outrigger Canoe Club",
+        "most_wins": 3,
+        "fastest_winner": {
+          "race_id": "1088",
+          "race_name": "OHCRA Championship Regatta",
+          "season": 2025,
+          "winner": "Outrigger Canoe Club",
+          "winning_time": "2:04.28",
+          "winning_time_seconds": 124.28,
+          "runner_up": "Keahiakahoe Canoe Club",
+          "runner_up_time": "2:11.98",
+          "margin_seconds": 7.7,
+          "entries": 13
+        },
+        "closest_race": {
+          "race_id": "1083",
+          "race_name": "King Kamehameha Day Regatta",
+          "season": 2025,
+          "winner": "Keahiakahoe Canoe Club",
+          "winning_time": "2:20.05",
+          "winning_time_seconds": 140.05,
+          "runner_up": "Lanikai Canoe Club",
+          "runner_up_time": "2:20.31",
+          "margin_seconds": 0.26,
+          "entries": 13
+        },
+        "deepest_race": {
+          "race_id": "1082",
+          "race_name": "Clement D. Pai`aina Regatta",
+          "season": 2025,
+          "winner": "Keahiakahoe Canoe Club",
+          "winning_time": "2:08.13",
+          "winning_time_seconds": 128.13,
+          "runner_up": "Lanikai Canoe Club",
+          "runner_up_time": "2:11.88",
+          "margin_seconds": 3.75,
+          "entries": 14
+        }
+      },
+      {
+        "event": "Women Novice B",
+        "season": 2026,
+        "races": 5,
+        "entries": 72,
+        "average_entries": 14.4,
+        "clubs": 15,
+        "average_winning_time_seconds": 129.47,
+        "average_margin_seconds": 2.33,
+        "closest_margin_seconds": 0.66,
+        "most_wins_club": "Lanikai Canoe Club",
+        "most_wins": 3,
+        "fastest_winner": {
+          "race_id": "1196",
+          "race_name": "Waimanalo Regatta",
+          "season": 2026,
+          "winner": "Lanikai Canoe Club",
+          "winning_time": "1:53.08",
+          "winning_time_seconds": 113.08,
+          "runner_up": "Waikiki Surf Club",
+          "runner_up_time": "2:00.09",
+          "margin_seconds": 7.01,
+          "entries": 15
+        },
+        "closest_race": {
+          "race_id": "1194",
+          "race_name": "King Kamehameha Day Regatta",
+          "season": 2026,
+          "winner": "Lanikai Canoe Club",
+          "winning_time": "2:03.73",
+          "winning_time_seconds": 123.73,
+          "runner_up": "Kailua Canoe Club",
+          "runner_up_time": "2:04.39",
+          "margin_seconds": 0.66,
+          "entries": 14
+        },
+        "deepest_race": {
+          "race_id": "1195",
+          "race_name": "Father`s Day Regatta",
+          "season": 2026,
+          "winner": "Kailua Canoe Club",
+          "winning_time": "2:01.36",
+          "winning_time_seconds": 121.36,
+          "runner_up": "Lanikai Canoe Club",
+          "runner_up_time": "2:02.85",
+          "margin_seconds": 1.49,
+          "entries": 15
+        }
+      }
+    ]
+  },
+  "current_roster_composition": {
+    "teams": [
+      {
+        "event": "Women Novice A",
+        "club": "Lanikai Canoe Club",
+        "entries": 5,
+        "wins": 2,
+        "podiums": 5,
+        "paddler_appearances": 30,
+        "first_year_a": 6,
+        "second_year_a": 15,
+        "prior_a_history": 0,
+        "prior_b_history": 3,
+        "unknown": 6,
+        "points": 27.0,
+        "known_share": 0.8,
+        "first_year_share": 0.2,
+        "second_year_share": 0.5,
+        "unique_paddler_count": 9,
+        "unique_first_year_a": 3,
+        "unique_second_year_a": 3,
+        "unique_prior_a_history": 0,
+        "unique_prior_b_history": 1,
+        "unique_unknown": 2,
+        "lean": "mostly_second_year_a"
+      },
+      {
+        "event": "Women Novice A",
+        "club": "Hui Nalu Canoe Club",
+        "entries": 5,
+        "wins": 2,
+        "podiums": 4,
+        "paddler_appearances": 30,
+        "first_year_a": 18,
+        "second_year_a": 11,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "points": 24.0,
+        "known_share": 0.967,
+        "first_year_share": 0.6,
+        "second_year_share": 0.367,
+        "unique_paddler_count": 10,
+        "unique_first_year_a": 6,
+        "unique_second_year_a": 3,
+        "unique_prior_a_history": 0,
+        "unique_prior_b_history": 0,
+        "unique_unknown": 1,
+        "lean": "mostly_first_year_a"
+      },
+      {
+        "event": "Women Novice A",
+        "club": "Kailua Canoe Club",
+        "entries": 5,
+        "wins": 1,
+        "podiums": 4,
+        "paddler_appearances": 30,
+        "first_year_a": 14,
+        "second_year_a": 10,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 6,
+        "points": 23.0,
+        "known_share": 0.8,
+        "first_year_share": 0.467,
+        "second_year_share": 0.333,
+        "unique_paddler_count": 12,
+        "unique_first_year_a": 6,
+        "unique_second_year_a": 4,
+        "unique_prior_a_history": 0,
+        "unique_prior_b_history": 0,
+        "unique_unknown": 2,
+        "lean": "mostly_first_year_a"
+      },
+      {
+        "event": "Women Novice A",
+        "club": "Keahiakahoe Canoe Club",
+        "entries": 5,
+        "wins": 0,
+        "podiums": 1,
+        "paddler_appearances": 30,
+        "first_year_a": 13,
+        "second_year_a": 12,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 5,
+        "points": 14.0,
+        "known_share": 0.833,
+        "first_year_share": 0.433,
+        "second_year_share": 0.4,
+        "unique_paddler_count": 7,
+        "unique_first_year_a": 3,
+        "unique_second_year_a": 3,
+        "unique_prior_a_history": 0,
+        "unique_prior_b_history": 0,
+        "unique_unknown": 1,
+        "lean": "mostly_first_year_a"
+      },
+      {
+        "event": "Women Novice A",
+        "club": "Outrigger Canoe Club",
+        "entries": 5,
+        "wins": 0,
+        "podiums": 1,
+        "paddler_appearances": 30,
+        "first_year_a": 16,
+        "second_year_a": 7,
+        "prior_a_history": 0,
+        "prior_b_history": 4,
+        "unknown": 3,
+        "points": 9.0,
+        "known_share": 0.9,
+        "first_year_share": 0.533,
+        "second_year_share": 0.233,
+        "unique_paddler_count": 10,
+        "unique_first_year_a": 5,
+        "unique_second_year_a": 2,
+        "unique_prior_a_history": 0,
+        "unique_prior_b_history": 1,
+        "unique_unknown": 2,
+        "lean": "mostly_first_year_a"
+      },
+      {
+        "event": "Women Novice A",
+        "club": "Waimanalo Canoe Club",
+        "entries": 5,
+        "wins": 0,
+        "podiums": 0,
+        "paddler_appearances": 30,
+        "first_year_a": 17,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 10,
+        "points": 9.0,
+        "known_share": 0.667,
+        "first_year_share": 0.567,
+        "second_year_share": 0.1,
+        "unique_paddler_count": 8,
+        "unique_first_year_a": 5,
+        "unique_second_year_a": 1,
+        "unique_prior_a_history": 0,
+        "unique_prior_b_history": 0,
+        "unique_unknown": 2,
+        "lean": "mostly_first_year_a"
+      },
+      {
+        "event": "Women Novice A",
+        "club": "Kai Oni Canoe Club",
+        "entries": 5,
+        "wins": 0,
+        "podiums": 0,
+        "paddler_appearances": 30,
+        "first_year_a": 4,
+        "second_year_a": 22,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 4,
+        "points": 2.0,
+        "known_share": 0.867,
+        "first_year_share": 0.133,
+        "second_year_share": 0.733,
+        "unique_paddler_count": 8,
+        "unique_first_year_a": 2,
+        "unique_second_year_a": 5,
+        "unique_prior_a_history": 0,
+        "unique_prior_b_history": 0,
+        "unique_unknown": 1,
+        "lean": "mostly_second_year_a"
+      },
+      {
+        "event": "Women Novice A",
+        "club": "Leeward Kai Canoe Club",
+        "entries": 4,
+        "wins": 0,
+        "podiums": 0,
+        "paddler_appearances": 24,
+        "first_year_a": 3,
+        "second_year_a": 5,
+        "prior_a_history": 4,
+        "prior_b_history": 4,
+        "unknown": 8,
+        "points": 2.0,
+        "known_share": 0.667,
+        "first_year_share": 0.125,
+        "second_year_share": 0.208,
+        "unique_paddler_count": 8,
+        "unique_first_year_a": 2,
+        "unique_second_year_a": 2,
+        "unique_prior_a_history": 1,
+        "unique_prior_b_history": 1,
+        "unique_unknown": 2,
+        "lean": "mostly_second_year_a"
+      },
+      {
+        "event": "Women Novice A",
+        "club": "Honolulu Pearl Canoe Club",
+        "entries": 5,
+        "wins": 0,
+        "podiums": 0,
+        "paddler_appearances": 30,
+        "first_year_a": 4,
+        "second_year_a": 17,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 9,
+        "points": 0.0,
+        "known_share": 0.7,
+        "first_year_share": 0.133,
+        "second_year_share": 0.567,
+        "unique_paddler_count": 9,
+        "unique_first_year_a": 2,
+        "unique_second_year_a": 5,
+        "unique_prior_a_history": 0,
+        "unique_prior_b_history": 0,
+        "unique_unknown": 2,
+        "lean": "mostly_second_year_a"
+      },
+      {
+        "event": "Women Novice A",
+        "club": "Healani Canoe Club",
+        "entries": 5,
+        "wins": 0,
+        "podiums": 0,
+        "paddler_appearances": 30,
+        "first_year_a": 11,
+        "second_year_a": 4,
+        "prior_a_history": 0,
+        "prior_b_history": 1,
+        "unknown": 14,
+        "points": 0.0,
+        "known_share": 0.533,
+        "first_year_share": 0.367,
+        "second_year_share": 0.133,
+        "unique_paddler_count": 14,
+        "unique_first_year_a": 4,
+        "unique_second_year_a": 3,
+        "unique_prior_a_history": 0,
+        "unique_prior_b_history": 1,
+        "unique_unknown": 6,
+        "lean": "mostly_first_year_a"
+      },
+      {
+        "event": "Women Novice A",
+        "club": "Ewa Pu`uloa Outrigger",
+        "entries": 5,
+        "wins": 0,
+        "podiums": 0,
+        "paddler_appearances": 30,
+        "first_year_a": 0,
+        "second_year_a": 10,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 20,
+        "points": 0.0,
+        "known_share": 0.333,
+        "first_year_share": 0.0,
+        "second_year_share": 0.333,
+        "unique_paddler_count": 8,
+        "unique_first_year_a": 0,
+        "unique_second_year_a": 2,
+        "unique_prior_a_history": 0,
+        "unique_prior_b_history": 0,
+        "unique_unknown": 6,
+        "lean": "mostly_second_year_a"
+      },
+      {
+        "event": "Women Novice A",
+        "club": "Makaha Canoe Club",
+        "entries": 2,
+        "wins": 0,
+        "podiums": 0,
+        "paddler_appearances": 12,
+        "first_year_a": 6,
+        "second_year_a": 0,
+        "prior_a_history": 0,
+        "prior_b_history": 4,
+        "unknown": 2,
+        "points": 0.0,
+        "known_share": 0.833,
+        "first_year_share": 0.5,
+        "second_year_share": 0.0,
+        "unique_paddler_count": 6,
+        "unique_first_year_a": 3,
+        "unique_second_year_a": 0,
+        "unique_prior_a_history": 0,
+        "unique_prior_b_history": 2,
+        "unique_unknown": 1,
+        "lean": "mostly_first_year_a"
+      },
+      {
+        "event": "Women Novice A",
+        "club": "Koa Kai Canoe Club",
+        "entries": 2,
+        "wins": 0,
+        "podiums": 0,
+        "paddler_appearances": 12,
+        "first_year_a": 2,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 8,
+        "points": 0.0,
+        "known_share": 0.333,
+        "first_year_share": 0.167,
+        "second_year_share": 0.167,
+        "unique_paddler_count": 7,
+        "unique_first_year_a": 1,
+        "unique_second_year_a": 2,
+        "unique_prior_a_history": 0,
+        "unique_prior_b_history": 0,
+        "unique_unknown": 4,
+        "lean": "mixed_or_unknown"
+      },
+      {
+        "event": "Men Novice A",
+        "club": "Outrigger Canoe Club",
+        "entries": 5,
+        "wins": 4,
+        "podiums": 5,
+        "paddler_appearances": 30,
+        "first_year_a": 13,
+        "second_year_a": 9,
+        "prior_a_history": 0,
+        "prior_b_history": 3,
+        "unknown": 5,
+        "points": 33.0,
+        "known_share": 0.833,
+        "first_year_share": 0.433,
+        "second_year_share": 0.3,
+        "unique_paddler_count": 8,
+        "unique_first_year_a": 3,
+        "unique_second_year_a": 2,
+        "unique_prior_a_history": 0,
+        "unique_prior_b_history": 1,
+        "unique_unknown": 2,
+        "lean": "mostly_first_year_a"
+      },
+      {
+        "event": "Men Novice A",
+        "club": "Lanikai Canoe Club",
+        "entries": 5,
+        "wins": 1,
+        "podiums": 5,
+        "paddler_appearances": 30,
+        "first_year_a": 8,
+        "second_year_a": 17,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 5,
+        "points": 26.0,
+        "known_share": 0.833,
+        "first_year_share": 0.267,
+        "second_year_share": 0.567,
+        "unique_paddler_count": 11,
+        "unique_first_year_a": 5,
+        "unique_second_year_a": 4,
+        "unique_prior_a_history": 0,
+        "unique_prior_b_history": 0,
+        "unique_unknown": 2,
+        "lean": "mostly_second_year_a"
+      },
+      {
+        "event": "Men Novice A",
+        "club": "Kai Oni Canoe Club",
+        "entries": 5,
+        "wins": 0,
+        "podiums": 2,
+        "paddler_appearances": 30,
+        "first_year_a": 16,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 2,
+        "unknown": 9,
+        "points": 16.0,
+        "known_share": 0.7,
+        "first_year_share": 0.533,
+        "second_year_share": 0.1,
+        "unique_paddler_count": 8,
+        "unique_first_year_a": 4,
+        "unique_second_year_a": 1,
+        "unique_prior_a_history": 0,
+        "unique_prior_b_history": 1,
+        "unique_unknown": 2,
+        "lean": "mostly_first_year_a"
+      },
+      {
+        "event": "Men Novice A",
+        "club": "Waimanalo Canoe Club",
+        "entries": 5,
+        "wins": 0,
+        "podiums": 1,
+        "paddler_appearances": 30,
+        "first_year_a": 0,
+        "second_year_a": 17,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 13,
+        "points": 15.0,
+        "known_share": 0.567,
+        "first_year_share": 0.0,
+        "second_year_share": 0.567,
+        "unique_paddler_count": 8,
+        "unique_first_year_a": 0,
+        "unique_second_year_a": 4,
+        "unique_prior_a_history": 0,
+        "unique_prior_b_history": 0,
+        "unique_unknown": 4,
+        "lean": "mostly_second_year_a"
+      },
+      {
+        "event": "Men Novice A",
+        "club": "Kailua Canoe Club",
+        "entries": 5,
+        "wins": 0,
+        "podiums": 2,
+        "paddler_appearances": 30,
+        "first_year_a": 17,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 9,
+        "unknown": 2,
+        "points": 13.0,
+        "known_share": 0.933,
+        "first_year_share": 0.567,
+        "second_year_share": 0.067,
+        "unique_paddler_count": 13,
+        "unique_first_year_a": 6,
+        "unique_second_year_a": 1,
+        "unique_prior_a_history": 0,
+        "unique_prior_b_history": 4,
+        "unique_unknown": 2,
+        "lean": "mostly_first_year_a"
+      },
+      {
+        "event": "Men Novice A",
+        "club": "Healani Canoe Club",
+        "entries": 5,
+        "wins": 0,
+        "podiums": 0,
+        "paddler_appearances": 30,
+        "first_year_a": 12,
+        "second_year_a": 13,
+        "prior_a_history": 0,
+        "prior_b_history": 2,
+        "unknown": 3,
+        "points": 3.0,
+        "known_share": 0.9,
+        "first_year_share": 0.4,
+        "second_year_share": 0.433,
+        "unique_paddler_count": 11,
+        "unique_first_year_a": 5,
+        "unique_second_year_a": 4,
+        "unique_prior_a_history": 0,
+        "unique_prior_b_history": 1,
+        "unique_unknown": 1,
+        "lean": "mostly_second_year_a"
+      },
+      {
+        "event": "Men Novice A",
+        "club": "Hui Nalu Canoe Club",
+        "entries": 5,
+        "wins": 0,
+        "podiums": 0,
+        "paddler_appearances": 30,
+        "first_year_a": 13,
+        "second_year_a": 9,
+        "prior_a_history": 1,
+        "prior_b_history": 7,
+        "unknown": 0,
+        "points": 3.0,
+        "known_share": 1.0,
+        "first_year_share": 0.433,
+        "second_year_share": 0.3,
+        "unique_paddler_count": 8,
+        "unique_first_year_a": 3,
+        "unique_second_year_a": 2,
+        "unique_prior_a_history": 1,
+        "unique_prior_b_history": 2,
+        "unique_unknown": 0,
+        "lean": "mostly_first_year_a"
+      },
+      {
+        "event": "Men Novice A",
+        "club": "Keahiakahoe Canoe Club",
+        "entries": 4,
+        "wins": 0,
+        "podiums": 0,
+        "paddler_appearances": 23,
+        "first_year_a": 0,
+        "second_year_a": 0,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 23,
+        "points": 1.0,
+        "known_share": 0.0,
+        "first_year_share": 0.0,
+        "second_year_share": 0.0,
+        "unique_paddler_count": 7,
+        "unique_first_year_a": 0,
+        "unique_second_year_a": 0,
+        "unique_prior_a_history": 0,
+        "unique_prior_b_history": 0,
+        "unique_unknown": 7,
+        "lean": "mixed_or_unknown"
+      },
+      {
+        "event": "Men Novice A",
+        "club": "Makaha Canoe Club",
+        "entries": 5,
+        "wins": 0,
+        "podiums": 0,
+        "paddler_appearances": 30,
+        "first_year_a": 20,
+        "second_year_a": 0,
+        "prior_a_history": 4,
+        "prior_b_history": 0,
+        "unknown": 6,
+        "points": 0.0,
+        "known_share": 0.8,
+        "first_year_share": 0.667,
+        "second_year_share": 0.0,
+        "unique_paddler_count": 9,
+        "unique_first_year_a": 5,
+        "unique_second_year_a": 0,
+        "unique_prior_a_history": 1,
+        "unique_prior_b_history": 0,
+        "unique_unknown": 3,
+        "lean": "mostly_first_year_a"
+      },
+      {
+        "event": "Men Novice A",
+        "club": "Honolulu Pearl Canoe Club",
+        "entries": 5,
+        "wins": 0,
+        "podiums": 0,
+        "paddler_appearances": 30,
+        "first_year_a": 10,
+        "second_year_a": 8,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 12,
+        "points": 0.0,
+        "known_share": 0.6,
+        "first_year_share": 0.333,
+        "second_year_share": 0.267,
+        "unique_paddler_count": 9,
+        "unique_first_year_a": 3,
+        "unique_second_year_a": 3,
+        "unique_prior_a_history": 0,
+        "unique_prior_b_history": 0,
+        "unique_unknown": 3,
+        "lean": "mostly_first_year_a"
+      },
+      {
+        "event": "Men Novice A",
+        "club": "Koa Kai Canoe Club",
+        "entries": 4,
+        "wins": 0,
+        "podiums": 0,
+        "paddler_appearances": 24,
+        "first_year_a": 14,
+        "second_year_a": 2,
+        "prior_a_history": 3,
+        "prior_b_history": 0,
+        "unknown": 5,
+        "points": 0.0,
+        "known_share": 0.792,
+        "first_year_share": 0.583,
+        "second_year_share": 0.083,
+        "unique_paddler_count": 9,
+        "unique_first_year_a": 5,
+        "unique_second_year_a": 1,
+        "unique_prior_a_history": 1,
+        "unique_prior_b_history": 0,
+        "unique_unknown": 2,
+        "lean": "mostly_first_year_a"
+      },
+      {
+        "event": "Men Novice A",
+        "club": "Waikiki Surf Club",
+        "entries": 1,
+        "wins": 0,
+        "podiums": 0,
+        "paddler_appearances": 6,
+        "first_year_a": 4,
+        "second_year_a": 0,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "points": 0.0,
+        "known_share": 0.667,
+        "first_year_share": 0.667,
+        "second_year_share": 0.0,
+        "unique_paddler_count": 6,
+        "unique_first_year_a": 4,
+        "unique_second_year_a": 0,
+        "unique_prior_a_history": 0,
+        "unique_prior_b_history": 0,
+        "unique_unknown": 2,
+        "lean": "mostly_first_year_a"
+      },
+      {
+        "event": "Men Novice A",
+        "club": "Hui Lanakila Canoe Club",
+        "entries": 1,
+        "wins": 0,
+        "podiums": 0,
+        "paddler_appearances": 6,
+        "first_year_a": 0,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 1,
+        "unknown": 2,
+        "points": 0.0,
+        "known_share": 0.667,
+        "first_year_share": 0.0,
+        "second_year_share": 0.5,
+        "unique_paddler_count": 6,
+        "unique_first_year_a": 0,
+        "unique_second_year_a": 3,
+        "unique_prior_a_history": 0,
+        "unique_prior_b_history": 1,
+        "unique_unknown": 2,
+        "lean": "mostly_second_year_a"
+      },
+      {
+        "event": "Men Novice A",
+        "club": "Leeward Kai Canoe Club",
+        "entries": 1,
+        "wins": 0,
+        "podiums": 0,
+        "paddler_appearances": 6,
+        "first_year_a": 1,
+        "second_year_a": 1,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 4,
+        "points": 0.0,
+        "known_share": 0.333,
+        "first_year_share": 0.167,
+        "second_year_share": 0.167,
+        "unique_paddler_count": 6,
+        "unique_first_year_a": 1,
+        "unique_second_year_a": 1,
+        "unique_prior_a_history": 0,
+        "unique_prior_b_history": 0,
+        "unique_unknown": 4,
+        "lean": "mixed_or_unknown"
+      }
+    ],
+    "entries": [
+      {
+        "event": "Men Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Outrigger Canoe Club",
+        "place": 1,
+        "time": "4:01.35",
+        "points": 7.0,
+        "crew_size": 6,
+        "first_year_a": 2,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 1,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Sam Arico",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Josh Cornett Cornett",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Patrick Flynn",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Ryan Kelliher",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Parker Mooney",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Kamalu Ogata",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Lanikai Canoe Club",
+        "place": 2,
+        "time": "4:06.96",
+        "points": 5.0,
+        "crew_size": 6,
+        "first_year_a": 2,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Brandon Aukai",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Ross Borges",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Kyle Clarkin",
+            "classification": "unknown"
+          },
+          {
+            "name": "Mark Fischer",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Aries Jordan",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Mark Stultz",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Kai Oni Canoe Club",
+        "place": 3,
+        "time": "4:07.23",
+        "points": 4.0,
+        "crew_size": 6,
+        "first_year_a": 4,
+        "second_year_a": 0,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Josh Garrett",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Kaleo Kaiwi Lehano",
+            "classification": "unknown"
+          },
+          {
+            "name": "Zach Ritner",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Nate Sato",
+            "classification": "unknown"
+          },
+          {
+            "name": "Christian Stephenson",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Kai Ulansey",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Waimanalo Canoe Club",
+        "place": 4,
+        "time": "4:07.44",
+        "points": 3.0,
+        "crew_size": 6,
+        "first_year_a": 0,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 3,
+        "crew": [
+          {
+            "name": "Raul HERNANDEZ",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Jeremy Kubler",
+            "classification": "unknown"
+          },
+          {
+            "name": "Nui Ohelo",
+            "classification": "unknown"
+          },
+          {
+            "name": "Noa Ornellas",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Sheldon Rosa",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Joey Teiti-Gierlach",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Healani Canoe Club",
+        "place": 5,
+        "time": "4:15.74",
+        "points": 2.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Mike Kaainoni",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Steven McKnight",
+            "classification": "unknown"
+          },
+          {
+            "name": "Ryan Nakanishi",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Robbie Navarro-Lightholder",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Rhey Remolacio",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Takeshi Shimabukuro",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Hui Nalu Canoe Club",
+        "place": 6,
+        "time": "4:17.76",
+        "points": 1.0,
+        "crew_size": 6,
+        "first_year_a": 2,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 2,
+        "unknown": 0,
+        "crew": [
+          {
+            "name": "Austin Bryant",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Donny Kaulukukui",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Kris Long",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Michael Peyton",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Phil Racsa",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Mike Samaniego",
+            "classification": "prior_b_history"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Keahiakahoe Canoe Club",
+        "place": 7,
+        "time": "4:18.44",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 0,
+        "second_year_a": 0,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 6,
+        "crew": [
+          {
+            "name": "Cody Andres-Paguirigan",
+            "classification": "unknown"
+          },
+          {
+            "name": "Kanoa Hillen-Jenny",
+            "classification": "unknown"
+          },
+          {
+            "name": "Dylan Murillo",
+            "classification": "unknown"
+          },
+          {
+            "name": "Kekoa Riordan",
+            "classification": "unknown"
+          },
+          {
+            "name": "Jon Sedy",
+            "classification": "unknown"
+          },
+          {
+            "name": "Isaiah Uyemura-Silva",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Hui Lanakila Canoe Club",
+        "place": 8,
+        "time": "4:18.80",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 0,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 1,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Henry Chang",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Rob Foley",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Ekolu Lindsey",
+            "classification": "unknown"
+          },
+          {
+            "name": "Josiah Medal",
+            "classification": "unknown"
+          },
+          {
+            "name": "Andy Pender",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Kieron Walter",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Koa Kai Canoe Club",
+        "place": 9,
+        "time": "4:24.86",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 4,
+        "second_year_a": 0,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Dom Beale",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Christian Fullmer",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Logan Neifert",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Patrick Pua",
+            "classification": "unknown"
+          },
+          {
+            "name": "Michael Quintana",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Joseph Wakazuru",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Waikiki Surf Club",
+        "place": 10,
+        "time": "4:40.69",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 4,
+        "second_year_a": 0,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Nalu Coito",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Hugh Donlon",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Hooper LeBlanc",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Kukahi Lee",
+            "classification": "unknown"
+          },
+          {
+            "name": "Kupa'a Miano",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "JEFFERY VILLINGER",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Makaha Canoe Club",
+        "place": 11,
+        "time": "4:59.80",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 5,
+        "second_year_a": 0,
+        "prior_a_history": 1,
+        "prior_b_history": 0,
+        "unknown": 0,
+        "crew": [
+          {
+            "name": "Scrappy Bailor",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "DJ De Mello-Muna",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Russell Eugenio",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Angel Ibanez",
+            "classification": "prior_a_history"
+          },
+          {
+            "name": "KANOAH JURY",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Justin Mcgarvey",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Kailua Canoe Club",
+        "place": null,
+        "time": "4:06.47",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 0,
+        "prior_a_history": 0,
+        "prior_b_history": 3,
+        "unknown": 0,
+        "crew": [
+          {
+            "name": "Keith Charters",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Chase Cromwell",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Alex Daniels",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Chris Hunter",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Stephan Toavs",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Dennis Wieder",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Honolulu Pearl Canoe Club",
+        "place": null,
+        "time": "4:35.04",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 2,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Jonah Dedrick",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Nick Gibbons",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Dane Kealoha",
+            "classification": "unknown"
+          },
+          {
+            "name": "Maka Keone",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Dana Lyons",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "John Schrepfer",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Outrigger Canoe Club",
+        "place": 1,
+        "time": "4:05.53",
+        "points": 7.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 1,
+        "prior_a_history": 0,
+        "prior_b_history": 1,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Sam Arico",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Patrick Flynn",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Ryan Kelliher",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Parker Mooney",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Kamalu Ogata",
+            "classification": "unknown"
+          },
+          {
+            "name": "J.P. Snyder",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Lanikai Canoe Club",
+        "place": 2,
+        "time": "4:06.83",
+        "points": 5.0,
+        "crew_size": 6,
+        "first_year_a": 2,
+        "second_year_a": 4,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 0,
+        "crew": [
+          {
+            "name": "Ross Borges",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Frenchy Coudrier",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Mark Fischer",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Jonathan Ruddy",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Mark Stoutemyer",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Mark Stultz",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Kailua Canoe Club",
+        "place": 3,
+        "time": "4:12.05",
+        "points": 4.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 0,
+        "prior_a_history": 0,
+        "prior_b_history": 2,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Sean Brown",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Chase Cromwell",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Alex Daniels",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Rob Essman-Hufnagel",
+            "classification": "unknown"
+          },
+          {
+            "name": "Stephan Toavs",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Dennis Wieder",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Kai Oni Canoe Club",
+        "place": 4,
+        "time": "4:16.68",
+        "points": 3.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 1,
+        "prior_a_history": 0,
+        "prior_b_history": 1,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Josh Garrett",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Kaleo Kaiwi Lehano",
+            "classification": "unknown"
+          },
+          {
+            "name": "Micah Mizo",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Jon Stark",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Christian Stephenson",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Kai Ulansey",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Waimanalo Canoe Club",
+        "place": 5,
+        "time": "4:22.58",
+        "points": 2.0,
+        "crew_size": 6,
+        "first_year_a": 0,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 3,
+        "crew": [
+          {
+            "name": "Zayden Hashimoto",
+            "classification": "unknown"
+          },
+          {
+            "name": "Raul HERNANDEZ",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Nui Ohelo",
+            "classification": "unknown"
+          },
+          {
+            "name": "Noa Ornellas",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Keahi Piiohia",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Joey Teiti-Gierlach",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Keahiakahoe Canoe Club",
+        "place": 6,
+        "time": "4:30.40",
+        "points": 1.0,
+        "crew_size": 5,
+        "first_year_a": 0,
+        "second_year_a": 0,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 5,
+        "crew": [
+          {
+            "name": "Cody Andres-Paguirigan",
+            "classification": "unknown"
+          },
+          {
+            "name": "Kanoa Hillen-Jenny",
+            "classification": "unknown"
+          },
+          {
+            "name": "Dylan Murillo",
+            "classification": "unknown"
+          },
+          {
+            "name": "Jon Sedy",
+            "classification": "unknown"
+          },
+          {
+            "name": "Isaiah Uyemura-Silva",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Hui Nalu Canoe Club",
+        "place": 7,
+        "time": "4:30.97",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 2,
+        "second_year_a": 1,
+        "prior_a_history": 1,
+        "prior_b_history": 2,
+        "unknown": 0,
+        "crew": [
+          {
+            "name": "Barrett Johnston",
+            "classification": "prior_a_history"
+          },
+          {
+            "name": "Donny Kaulukukui",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Kris Long",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Michael Peyton",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Phil Racsa",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Mike Samaniego",
+            "classification": "prior_b_history"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Koa Kai Canoe Club",
+        "place": 8,
+        "time": "4:35.74",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 1,
+        "prior_a_history": 1,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Dom Beale",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Teddy Brokaw",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Christian Fullmer",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Michael Quintana",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Dylan Smith",
+            "classification": "prior_a_history"
+          },
+          {
+            "name": "Joseph Wakazuru",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Healani Canoe Club",
+        "place": 9,
+        "time": "4:41.41",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 1,
+        "second_year_a": 4,
+        "prior_a_history": 0,
+        "prior_b_history": 1,
+        "unknown": 0,
+        "crew": [
+          {
+            "name": "Jason Frattalone",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Eric Mahi",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Kody Miyamoto",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Ryan Nakanishi",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Jacob Russell-Cheung",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Takeshi Shimabukuro",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Honolulu Pearl Canoe Club",
+        "place": null,
+        "time": "4:46.03",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 2,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Chris Babcock",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Brice Bethel",
+            "classification": "unknown"
+          },
+          {
+            "name": "Nick Gibbons",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Dane Kealoha",
+            "classification": "unknown"
+          },
+          {
+            "name": "Dana Lyons",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "John Schrepfer",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Leeward Kai Canoe Club",
+        "place": null,
+        "time": "4:57.10",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 1,
+        "second_year_a": 1,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 4,
+        "crew": [
+          {
+            "name": "Brandon Apela",
+            "classification": "unknown"
+          },
+          {
+            "name": "Aaron Costa",
+            "classification": "unknown"
+          },
+          {
+            "name": "Keaka Germano",
+            "classification": "unknown"
+          },
+          {
+            "name": "Michael Keliihoomalu-Fernandez",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Mel Puu",
+            "classification": "unknown"
+          },
+          {
+            "name": "Eddie Rameno",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Makaha Canoe Club",
+        "place": null,
+        "time": "6:56.40",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 4,
+        "second_year_a": 0,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "MICHAEL AVILES",
+            "classification": "unknown"
+          },
+          {
+            "name": "Scrappy Bailor",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "DJ De Mello-Muna",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "KANOAH JURY",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Kainoa Laikupu",
+            "classification": "unknown"
+          },
+          {
+            "name": "Justin Mcgarvey",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1195",
+        "race_name": "Father`s Day Regatta",
+        "club": "Lanikai Canoe Club",
+        "place": 1,
+        "time": "3:45.69",
+        "points": 7.0,
+        "crew_size": 6,
+        "first_year_a": 1,
+        "second_year_a": 4,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Ross Borges",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Frenchy Coudrier",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Mark Fischer",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Jonathan Ruddy",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Matthew Simonson",
+            "classification": "unknown"
+          },
+          {
+            "name": "Mark Stultz",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1195",
+        "race_name": "Father`s Day Regatta",
+        "club": "Outrigger Canoe Club",
+        "place": 2,
+        "time": "3:46.92",
+        "points": 5.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Sam Arico",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Josh Cornett Cornett",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Riley Decker",
+            "classification": "unknown"
+          },
+          {
+            "name": "Patrick Flynn",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Ryan Kelliher",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "J.P. Snyder",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1195",
+        "race_name": "Father`s Day Regatta",
+        "club": "Kai Oni Canoe Club",
+        "place": 3,
+        "time": "3:49.64",
+        "points": 4.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 1,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Kaleo Kaiwi Lehano",
+            "classification": "unknown"
+          },
+          {
+            "name": "Micah Mizo",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Zach Ritner",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Nate Sato",
+            "classification": "unknown"
+          },
+          {
+            "name": "Christian Stephenson",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Kai Ulansey",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1195",
+        "race_name": "Father`s Day Regatta",
+        "club": "Waimanalo Canoe Club",
+        "place": 4,
+        "time": "3:53.06",
+        "points": 3.0,
+        "crew_size": 6,
+        "first_year_a": 0,
+        "second_year_a": 4,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Raul HERNANDEZ",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Nui Ohelo",
+            "classification": "unknown"
+          },
+          {
+            "name": "Noa Ornellas",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Keahi Piiohia",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Sheldon Rosa",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Joey Teiti-Gierlach",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1195",
+        "race_name": "Father`s Day Regatta",
+        "club": "Kailua Canoe Club",
+        "place": 5,
+        "time": "4:04.01",
+        "points": 2.0,
+        "crew_size": 6,
+        "first_year_a": 4,
+        "second_year_a": 0,
+        "prior_a_history": 0,
+        "prior_b_history": 1,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Chase Cromwell",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Alex Daniels",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Joe Finkle",
+            "classification": "unknown"
+          },
+          {
+            "name": "Sean Palmer",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Tep Tepley",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Dennis Wieder",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1195",
+        "race_name": "Father`s Day Regatta",
+        "club": "Hui Nalu Canoe Club",
+        "place": 6,
+        "time": "4:06.54",
+        "points": 1.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 1,
+        "unknown": 0,
+        "crew": [
+          {
+            "name": "Austin Bryant",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Donny Kaulukukui",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Kris Long",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Michael Peyton",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Phil Racsa",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Brian Symanski",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1195",
+        "race_name": "Father`s Day Regatta",
+        "club": "Healani Canoe Club",
+        "place": 7,
+        "time": "4:07.92",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 2,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 1,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Isaac Maielua",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Steven McKnight",
+            "classification": "unknown"
+          },
+          {
+            "name": "Ryan Nakanishi",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Robbie Navarro-Lightholder",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Jacob Russell-Cheung",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Takeshi Shimabukuro",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1195",
+        "race_name": "Father`s Day Regatta",
+        "club": "Keahiakahoe Canoe Club",
+        "place": 8,
+        "time": "4:09.26",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 0,
+        "second_year_a": 0,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 6,
+        "crew": [
+          {
+            "name": "Cody Andres-Paguirigan",
+            "classification": "unknown"
+          },
+          {
+            "name": "Donald Birch",
+            "classification": "unknown"
+          },
+          {
+            "name": "Kanoa Hillen-Jenny",
+            "classification": "unknown"
+          },
+          {
+            "name": "Dylan Murillo",
+            "classification": "unknown"
+          },
+          {
+            "name": "Kekoa Riordan",
+            "classification": "unknown"
+          },
+          {
+            "name": "Jon Sedy",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1195",
+        "race_name": "Father`s Day Regatta",
+        "club": "Honolulu Pearl Canoe Club",
+        "place": 9,
+        "time": "4:12.90",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 2,
+        "second_year_a": 1,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 3,
+        "crew": [
+          {
+            "name": "Chris Babcock",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Brice Bethel",
+            "classification": "unknown"
+          },
+          {
+            "name": "Kevin Czachura",
+            "classification": "unknown"
+          },
+          {
+            "name": "Dane Kealoha",
+            "classification": "unknown"
+          },
+          {
+            "name": "Maka Keone",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "John Schrepfer",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1195",
+        "race_name": "Father`s Day Regatta",
+        "club": "Makaha Canoe Club",
+        "place": 10,
+        "time": "4:39.86",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 0,
+        "prior_a_history": 1,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "MICHAEL AVILES",
+            "classification": "unknown"
+          },
+          {
+            "name": "Scrappy Bailor",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Russell Eugenio",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Journey I",
+            "classification": "unknown"
+          },
+          {
+            "name": "Angel Ibanez",
+            "classification": "prior_a_history"
+          },
+          {
+            "name": "Justin Mcgarvey",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1195",
+        "race_name": "Father`s Day Regatta",
+        "club": "Koa Kai Canoe Club",
+        "place": null,
+        "time": "4:04.80",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 4,
+        "second_year_a": 1,
+        "prior_a_history": 1,
+        "prior_b_history": 0,
+        "unknown": 0,
+        "crew": [
+          {
+            "name": "Dom Beale",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Teddy Brokaw",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Christian Fullmer",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Michael Quintana",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Dylan Smith",
+            "classification": "prior_a_history"
+          },
+          {
+            "name": "Josh Zavala",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1196",
+        "race_name": "Waimanalo Regatta",
+        "club": "Outrigger Canoe Club",
+        "place": 1,
+        "time": "4:05.44",
+        "points": 7.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Sam Arico",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Josh Cornett Cornett",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Patrick Flynn",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Ryan Kelliher",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Kamalu Ogata",
+            "classification": "unknown"
+          },
+          {
+            "name": "J.P. Snyder",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1196",
+        "race_name": "Waimanalo Regatta",
+        "club": "Lanikai Canoe Club",
+        "place": 2,
+        "time": "4:06.73",
+        "points": 5.0,
+        "crew_size": 6,
+        "first_year_a": 1,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Ross Borges",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Kyle Clarkin",
+            "classification": "unknown"
+          },
+          {
+            "name": "Frenchy Coudrier",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Jonathan Ruddy",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Matthew Simonson",
+            "classification": "unknown"
+          },
+          {
+            "name": "Mark Stultz",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1196",
+        "race_name": "Waimanalo Regatta",
+        "club": "Waimanalo Canoe Club",
+        "place": 3,
+        "time": "4:14.17",
+        "points": 4.0,
+        "crew_size": 6,
+        "first_year_a": 0,
+        "second_year_a": 4,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Raul HERNANDEZ",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Nui Ohelo",
+            "classification": "unknown"
+          },
+          {
+            "name": "Noa Ornellas",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Keahi Piiohia",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Sheldon Rosa",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Joey Teiti-Gierlach",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1196",
+        "race_name": "Waimanalo Regatta",
+        "club": "Kai Oni Canoe Club",
+        "place": 4,
+        "time": "4:18.31",
+        "points": 3.0,
+        "crew_size": 6,
+        "first_year_a": 4,
+        "second_year_a": 0,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Josh Garrett",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Kaleo Kaiwi Lehano",
+            "classification": "unknown"
+          },
+          {
+            "name": "Zach Ritner",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Nate Sato",
+            "classification": "unknown"
+          },
+          {
+            "name": "Christian Stephenson",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Kai Ulansey",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1196",
+        "race_name": "Waimanalo Regatta",
+        "club": "Kailua Canoe Club",
+        "place": 5,
+        "time": "4:22.77",
+        "points": 2.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 1,
+        "prior_a_history": 0,
+        "prior_b_history": 2,
+        "unknown": 0,
+        "crew": [
+          {
+            "name": "Chase Cromwell",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Alex Daniels",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Matthew Grose",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Chris Hunter",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Tep Tepley",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Dennis Wieder",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1196",
+        "race_name": "Waimanalo Regatta",
+        "club": "Hui Nalu Canoe Club",
+        "place": 6,
+        "time": "4:32.28",
+        "points": 1.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 1,
+        "unknown": 0,
+        "crew": [
+          {
+            "name": "Austin Bryant",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Donny Kaulukukui",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Kris Long",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Michael Peyton",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Phil Racsa",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Brian Symanski",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1196",
+        "race_name": "Waimanalo Regatta",
+        "club": "Keahiakahoe Canoe Club",
+        "place": 7,
+        "time": "4:37.70",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 0,
+        "second_year_a": 0,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 6,
+        "crew": [
+          {
+            "name": "Cody Andres-Paguirigan",
+            "classification": "unknown"
+          },
+          {
+            "name": "Donald Birch",
+            "classification": "unknown"
+          },
+          {
+            "name": "Kanoa Hillen-Jenny",
+            "classification": "unknown"
+          },
+          {
+            "name": "Dylan Murillo",
+            "classification": "unknown"
+          },
+          {
+            "name": "Kekoa Riordan",
+            "classification": "unknown"
+          },
+          {
+            "name": "Jon Sedy",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1196",
+        "race_name": "Waimanalo Regatta",
+        "club": "Koa Kai Canoe Club",
+        "place": 8,
+        "time": "4:38.04",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 0,
+        "prior_a_history": 1,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Dom Beale",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Christian Fullmer",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Patrick Pua",
+            "classification": "unknown"
+          },
+          {
+            "name": "Michael Quintana",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Dylan Smith",
+            "classification": "prior_a_history"
+          },
+          {
+            "name": "Joseph Wakazuru",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1196",
+        "race_name": "Waimanalo Regatta",
+        "club": "Healani Canoe Club",
+        "place": 9,
+        "time": "4:40.74",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Mike Kaainoni",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Isaac Maielua",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Steven McKnight",
+            "classification": "unknown"
+          },
+          {
+            "name": "Ryan Nakanishi",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Robbie Navarro-Lightholder",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Takeshi Shimabukuro",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1196",
+        "race_name": "Waimanalo Regatta",
+        "club": "Honolulu Pearl Canoe Club",
+        "place": 10,
+        "time": "5:01.80",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 2,
+        "second_year_a": 1,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 3,
+        "crew": [
+          {
+            "name": "Brice Bethel",
+            "classification": "unknown"
+          },
+          {
+            "name": "Kevin Czachura",
+            "classification": "unknown"
+          },
+          {
+            "name": "Dane Kealoha",
+            "classification": "unknown"
+          },
+          {
+            "name": "Maka Keone",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Dana Lyons",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "John Schrepfer",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1196",
+        "race_name": "Waimanalo Regatta",
+        "club": "Makaha Canoe Club",
+        "place": 11,
+        "time": "5:03.65",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 4,
+        "second_year_a": 0,
+        "prior_a_history": 1,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "MICHAEL AVILES",
+            "classification": "unknown"
+          },
+          {
+            "name": "Scrappy Bailor",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "DJ De Mello-Muna",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Russell Eugenio",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Angel Ibanez",
+            "classification": "prior_a_history"
+          },
+          {
+            "name": "Justin Mcgarvey",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1198",
+        "race_name": "John D. Kaupiko Regatta",
+        "club": "Outrigger Canoe Club",
+        "place": 1,
+        "time": "3:52.80",
+        "points": 7.0,
+        "crew_size": 6,
+        "first_year_a": 2,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 1,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Sam Arico",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Josh Cornett Cornett",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Patrick Flynn",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Ryan Kelliher",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Parker Mooney",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Kamalu Ogata",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1198",
+        "race_name": "John D. Kaupiko Regatta",
+        "club": "Kailua Canoe Club",
+        "place": 2,
+        "time": "3:53.87",
+        "points": 5.0,
+        "crew_size": 6,
+        "first_year_a": 4,
+        "second_year_a": 1,
+        "prior_a_history": 0,
+        "prior_b_history": 1,
+        "unknown": 0,
+        "crew": [
+          {
+            "name": "Chase Cromwell",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Alex Daniels",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Matthew Grose",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Jason Hu",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Stephan Toavs",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Dennis Wieder",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1198",
+        "race_name": "John D. Kaupiko Regatta",
+        "club": "Lanikai Canoe Club",
+        "place": 3,
+        "time": "3:55.66",
+        "points": 4.0,
+        "crew_size": 6,
+        "first_year_a": 2,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Ross Borges",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Ryan Caroffino",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Frenchy Coudrier",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Jonathan Ruddy",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Matthew Simonson",
+            "classification": "unknown"
+          },
+          {
+            "name": "Mark Stultz",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1198",
+        "race_name": "John D. Kaupiko Regatta",
+        "club": "Waimanalo Canoe Club",
+        "place": 4,
+        "time": "3:56.49",
+        "points": 3.0,
+        "crew_size": 6,
+        "first_year_a": 0,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 3,
+        "crew": [
+          {
+            "name": "Jeremy Kubler",
+            "classification": "unknown"
+          },
+          {
+            "name": "Nui Ohelo",
+            "classification": "unknown"
+          },
+          {
+            "name": "Noa Ornellas",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Keahi Piiohia",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Sheldon Rosa",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Joey Teiti-Gierlach",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1198",
+        "race_name": "John D. Kaupiko Regatta",
+        "club": "Kai Oni Canoe Club",
+        "place": 5,
+        "time": "4:01.22",
+        "points": 2.0,
+        "crew_size": 6,
+        "first_year_a": 2,
+        "second_year_a": 1,
+        "prior_a_history": 0,
+        "prior_b_history": 1,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Kaleo Kaiwi Lehano",
+            "classification": "unknown"
+          },
+          {
+            "name": "Micah Mizo",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Nate Sato",
+            "classification": "unknown"
+          },
+          {
+            "name": "Jon Stark",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Christian Stephenson",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Kai Ulansey",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1198",
+        "race_name": "John D. Kaupiko Regatta",
+        "club": "Healani Canoe Club",
+        "place": 6,
+        "time": "4:18.27",
+        "points": 1.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 0,
+        "crew": [
+          {
+            "name": "Mike Kaainoni",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Eric Mahi",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Ryan Nakanishi",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Robbie Navarro-Lightholder",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Rhey Remolacio",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Takeshi Shimabukuro",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1198",
+        "race_name": "John D. Kaupiko Regatta",
+        "club": "Hui Nalu Canoe Club",
+        "place": 7,
+        "time": "4:18.88",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 1,
+        "unknown": 0,
+        "crew": [
+          {
+            "name": "Austin Bryant",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Donny Kaulukukui",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Kris Long",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Michael Peyton",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Phil Racsa",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Brian Symanski",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1198",
+        "race_name": "John D. Kaupiko Regatta",
+        "club": "Honolulu Pearl Canoe Club",
+        "place": 8,
+        "time": "4:27.97",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 2,
+        "second_year_a": 1,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 3,
+        "crew": [
+          {
+            "name": "Brice Bethel",
+            "classification": "unknown"
+          },
+          {
+            "name": "Kevin Czachura",
+            "classification": "unknown"
+          },
+          {
+            "name": "Jonah Dedrick",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Dane Kealoha",
+            "classification": "unknown"
+          },
+          {
+            "name": "Maka Keone",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Dana Lyons",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Men Novice A",
+        "race_id": "1198",
+        "race_name": "John D. Kaupiko Regatta",
+        "club": "Makaha Canoe Club",
+        "place": 9,
+        "time": "4:37.42",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 4,
+        "second_year_a": 0,
+        "prior_a_history": 1,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "MICHAEL AVILES",
+            "classification": "unknown"
+          },
+          {
+            "name": "Scrappy Bailor",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "DJ De Mello-Muna",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Russell Eugenio",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Angel Ibanez",
+            "classification": "prior_a_history"
+          },
+          {
+            "name": "Justin Mcgarvey",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Kailua Canoe Club",
+        "place": 1,
+        "time": "4:30.63",
+        "points": 7.0,
+        "crew_size": 6,
+        "first_year_a": 2,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Tani Cromwell",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Big B Falcon",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Linda Hill",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Kendall Hu",
+            "classification": "unknown"
+          },
+          {
+            "name": "Kimberly Troske",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Laura Vollert",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Hui Nalu Canoe Club",
+        "place": 2,
+        "time": "4:32.90",
+        "points": 5.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Alyssa Mahoe",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Laurie Naumu",
+            "classification": "unknown"
+          },
+          {
+            "name": "Nicole Prince",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Megs Seeley",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Tammy Smith",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Jacey Van Wert",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Lanikai Canoe Club",
+        "place": 3,
+        "time": "4:33.25",
+        "points": 4.0,
+        "crew_size": 6,
+        "first_year_a": 1,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 1,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "MJ Barker",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Kahala Companion",
+            "classification": "unknown"
+          },
+          {
+            "name": "Heather Kerkering",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Remi Riehl",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Katie Stevens",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Sarah Wylie",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Keahiakahoe Canoe Club",
+        "place": 4,
+        "time": "4:37.30",
+        "points": 3.0,
+        "crew_size": 6,
+        "first_year_a": 2,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Alana Abbey",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Briana Blotzke",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Jess Cheshire",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Shelly Gary",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Irene Kon",
+            "classification": "unknown"
+          },
+          {
+            "name": "Jess Wheeler",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Waimanalo Canoe Club",
+        "place": 5,
+        "time": "4:43.71",
+        "points": 2.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 1,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Rae Halafihi",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Ka'u Kalama-Ohelo",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Sunnie Martinez",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Emily Scoles",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Renell Soriano",
+            "classification": "unknown"
+          },
+          {
+            "name": "Taylor Spencer-Olsen",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Leeward Kai Canoe Club",
+        "place": 6,
+        "time": "4:45.48",
+        "points": 1.0,
+        "crew_size": 6,
+        "first_year_a": 1,
+        "second_year_a": 1,
+        "prior_a_history": 1,
+        "prior_b_history": 1,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Jazmine Baligad",
+            "classification": "unknown"
+          },
+          {
+            "name": "Nicole Brown",
+            "classification": "unknown"
+          },
+          {
+            "name": "Jazz Hokoana",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Jai Ibanez",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Lilinoe Kauweloa-Pilialoha",
+            "classification": "prior_a_history"
+          },
+          {
+            "name": "Kuulei Villasenor",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Outrigger Canoe Club",
+        "place": 7,
+        "time": "4:45.95",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 4,
+        "second_year_a": 1,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Lectie Batula",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Cassandra Forsyth",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Grace Jansson",
+            "classification": "unknown"
+          },
+          {
+            "name": "Katherine Kemp",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Emma Kenline",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Sierra Petrosky",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Healani Canoe Club",
+        "place": 8,
+        "time": "5:00.19",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 2,
+        "second_year_a": 1,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 3,
+        "crew": [
+          {
+            "name": "Kanani D'Angelo",
+            "classification": "unknown"
+          },
+          {
+            "name": "Devon Haia",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Rachel Hurley",
+            "classification": "unknown"
+          },
+          {
+            "name": "Nikki Lum",
+            "classification": "unknown"
+          },
+          {
+            "name": "Jessica McKenzie",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Mehana Ranney-Moore",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Kai Oni Canoe Club",
+        "place": 9,
+        "time": "5:01.96",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 1,
+        "second_year_a": 5,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 0,
+        "crew": [
+          {
+            "name": "Mina Cannon",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Seaenna Correa-Garcia",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Kristin Foose",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Mish Kahlbaum",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Alyssa Veneri",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Julianne Veneri",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Koa Kai Canoe Club",
+        "place": 10,
+        "time": "5:08.37",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 1,
+        "second_year_a": 1,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 4,
+        "crew": [
+          {
+            "name": "Esma Arslan",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Maddie Bender",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Lydia Earles",
+            "classification": "unknown"
+          },
+          {
+            "name": "Hannah Ishida",
+            "classification": "unknown"
+          },
+          {
+            "name": "Maria Melrose",
+            "classification": "unknown"
+          },
+          {
+            "name": "Meghan Okamoto",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Honolulu Pearl Canoe Club",
+        "place": 11,
+        "time": "5:27.58",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 1,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Jemma Godbout",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "PATIENCE LIKE",
+            "classification": "unknown"
+          },
+          {
+            "name": "Amanda Marshall",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Allie MARSHBANKS",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Diamond montoya",
+            "classification": "unknown"
+          },
+          {
+            "name": "Sam Wuchter",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Ewa Pu`uloa Outrigger",
+        "place": 12,
+        "time": "5:42.54",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 0,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 4,
+        "crew": [
+          {
+            "name": "Nikki Blas-Lani",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Danielle Meachum",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Bri Palama",
+            "classification": "unknown"
+          },
+          {
+            "name": "Talia Pana",
+            "classification": "unknown"
+          },
+          {
+            "name": "Bridge Sholtis",
+            "classification": "unknown"
+          },
+          {
+            "name": "Evie Torres",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1193",
+        "race_name": "Clement D. Pai`aina Regatta",
+        "club": "Makaha Canoe Club",
+        "place": 13,
+        "time": "5:55.50",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 0,
+        "prior_a_history": 0,
+        "prior_b_history": 2,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "BJ Bomentre",
+            "classification": "unknown"
+          },
+          {
+            "name": "Elise Cook",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "STEPHANIE HUNTER",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "U'I Keopuhiwa",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Sonia Vasquez",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "BETH WASHBURN",
+            "classification": "prior_b_history"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Lanikai Canoe Club",
+        "place": 1,
+        "time": "4:29.60",
+        "points": 7.0,
+        "crew_size": 6,
+        "first_year_a": 1,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "MJ Barker",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Kahala Companion",
+            "classification": "unknown"
+          },
+          {
+            "name": "Heather Kerkering",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Britt Rasmussen",
+            "classification": "unknown"
+          },
+          {
+            "name": "Remi Riehl",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Sarah Wylie",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Hui Nalu Canoe Club",
+        "place": 2,
+        "time": "4:33.03",
+        "points": 5.0,
+        "crew_size": 6,
+        "first_year_a": 4,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 0,
+        "crew": [
+          {
+            "name": "Rebecca Barrilleaux",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Alyssa Mahoe",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Nicole Prince",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Tammy Smith",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Jacey Van Wert",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Gina Wataru",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Kailua Canoe Club",
+        "place": 3,
+        "time": "4:33.39",
+        "points": 4.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Lila Castellano",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Tani Cromwell",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Kendall Hu",
+            "classification": "unknown"
+          },
+          {
+            "name": "Ashton Johnston",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Kimberly Troske",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Laura Vollert",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Keahiakahoe Canoe Club",
+        "place": 4,
+        "time": "4:40.85",
+        "points": 3.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Alana Abbey",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Jess Cheshire",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Shelly Gary",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Irene Kon",
+            "classification": "unknown"
+          },
+          {
+            "name": "Paige Suniga",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Jess Wheeler",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Outrigger Canoe Club",
+        "place": 5,
+        "time": "4:44.64",
+        "points": 2.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 1,
+        "prior_a_history": 0,
+        "prior_b_history": 1,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Anastasia David Demakas",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Cassandra Forsyth",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Katherine Kemp",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Emma Kenline",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Jessica Schem",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Harlow Thomas",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Waimanalo Canoe Club",
+        "place": 6,
+        "time": "4:50.43",
+        "points": 1.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 1,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Rae Halafihi",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Mehe Krainer",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Sunnie Martinez",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Emily Scoles",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Renell Soriano",
+            "classification": "unknown"
+          },
+          {
+            "name": "Taylor Spencer-Olsen",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Kai Oni Canoe Club",
+        "place": 7,
+        "time": "4:52.73",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 0,
+        "second_year_a": 5,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Mina Cannon",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Seaenna Correa-Garcia",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Mish Kahlbaum",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Alyssa Veneri",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Julianne Veneri",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Meakala Wilhelm",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Leeward Kai Canoe Club",
+        "place": 8,
+        "time": "4:56.07",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 0,
+        "second_year_a": 2,
+        "prior_a_history": 1,
+        "prior_b_history": 1,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Jazmine Baligad",
+            "classification": "unknown"
+          },
+          {
+            "name": "Nicole Brown",
+            "classification": "unknown"
+          },
+          {
+            "name": "Jai Ibanez",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Lilinoe Kauweloa-Pilialoha",
+            "classification": "prior_a_history"
+          },
+          {
+            "name": "Lani Rosa",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Kuulei Villasenor",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Honolulu Pearl Canoe Club",
+        "place": 9,
+        "time": "4:58.76",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 1,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Jemma Godbout",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Alicia Hendrix",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "PATIENCE LIKE",
+            "classification": "unknown"
+          },
+          {
+            "name": "Amanda Marshall",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Diamond montoya",
+            "classification": "unknown"
+          },
+          {
+            "name": "Sadie Tate",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Healani Canoe Club",
+        "place": 10,
+        "time": "4:59.55",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 2,
+        "second_year_a": 1,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 3,
+        "crew": [
+          {
+            "name": "Leli Laurie Chen",
+            "classification": "unknown"
+          },
+          {
+            "name": "Devon Haia",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Kirra Lindman",
+            "classification": "unknown"
+          },
+          {
+            "name": "Nikki Lum",
+            "classification": "unknown"
+          },
+          {
+            "name": "Jessica McKenzie",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Mehana Ranney-Moore",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Koa Kai Canoe Club",
+        "place": 11,
+        "time": "5:39.22",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 1,
+        "second_year_a": 1,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 4,
+        "crew": [
+          {
+            "name": "Maddie Bender",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Lydia Earles",
+            "classification": "unknown"
+          },
+          {
+            "name": "Jennifer Golda",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Hannah Ishida",
+            "classification": "unknown"
+          },
+          {
+            "name": "Maria Melrose",
+            "classification": "unknown"
+          },
+          {
+            "name": "Meghan Okamoto",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Makaha Canoe Club",
+        "place": 12,
+        "time": "5:52.96",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 0,
+        "prior_a_history": 0,
+        "prior_b_history": 2,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "BJ Bomentre",
+            "classification": "unknown"
+          },
+          {
+            "name": "Elise Cook",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "STEPHANIE HUNTER",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "U'I Keopuhiwa",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Sonia Vasquez",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "BETH WASHBURN",
+            "classification": "prior_b_history"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1194",
+        "race_name": "King Kamehameha Day Regatta",
+        "club": "Ewa Pu`uloa Outrigger",
+        "place": 13,
+        "time": "6:07.54",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 0,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 4,
+        "crew": [
+          {
+            "name": "Nikki Blas-Lani",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Pumehana Blas-Lani",
+            "classification": "unknown"
+          },
+          {
+            "name": "Danielle Meachum",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Bri Palama",
+            "classification": "unknown"
+          },
+          {
+            "name": "Talia Pana",
+            "classification": "unknown"
+          },
+          {
+            "name": "Evie Torres",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1195",
+        "race_name": "Father`s Day Regatta",
+        "club": "Hui Nalu Canoe Club",
+        "place": 1,
+        "time": "4:16.71",
+        "points": 7.0,
+        "crew_size": 6,
+        "first_year_a": 4,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 0,
+        "crew": [
+          {
+            "name": "Alyssa Mahoe",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Nicole Prince",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Cassidy Schmelter",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Megs Seeley",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Tammy Smith",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Jacey Van Wert",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1195",
+        "race_name": "Father`s Day Regatta",
+        "club": "Lanikai Canoe Club",
+        "place": 2,
+        "time": "4:20.91",
+        "points": 5.0,
+        "crew_size": 6,
+        "first_year_a": 2,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 1,
+        "unknown": 0,
+        "crew": [
+          {
+            "name": "MJ Barker",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Chrissy Casazza",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Heather Kerkering",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Brittany Mullis",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Remi Riehl",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Katie Stevens",
+            "classification": "prior_b_history"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1195",
+        "race_name": "Father`s Day Regatta",
+        "club": "Outrigger Canoe Club",
+        "place": 3,
+        "time": "4:23.36",
+        "points": 4.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 1,
+        "unknown": 0,
+        "crew": [
+          {
+            "name": "Anastasia David Demakas",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Katherine Kemp",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Emma Kenline",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Kali Larson",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Sierra Petrosky",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Jessica Schem",
+            "classification": "prior_b_history"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1195",
+        "race_name": "Father`s Day Regatta",
+        "club": "Kailua Canoe Club",
+        "place": 4,
+        "time": "4:28.39",
+        "points": 3.0,
+        "crew_size": 6,
+        "first_year_a": 4,
+        "second_year_a": 1,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Lila Castellano",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Tani Cromwell",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Meredith Graf",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Kendall Hu",
+            "classification": "unknown"
+          },
+          {
+            "name": "Ashton Johnston",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Laura Vollert",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1195",
+        "race_name": "Father`s Day Regatta",
+        "club": "Keahiakahoe Canoe Club",
+        "place": 5,
+        "time": "4:29.09",
+        "points": 2.0,
+        "crew_size": 6,
+        "first_year_a": 2,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Alana Abbey",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Briana Blotzke",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Shelly Gary",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Irene Kon",
+            "classification": "unknown"
+          },
+          {
+            "name": "Paige Suniga",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Jess Wheeler",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1195",
+        "race_name": "Father`s Day Regatta",
+        "club": "Waimanalo Canoe Club",
+        "place": 6,
+        "time": "4:39.34",
+        "points": 1.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 1,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Rae Halafihi",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Mehe Krainer",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Sunnie Martinez",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Emily Scoles",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Renell Soriano",
+            "classification": "unknown"
+          },
+          {
+            "name": "Taylor Spencer-Olsen",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1195",
+        "race_name": "Father`s Day Regatta",
+        "club": "Kai Oni Canoe Club",
+        "place": 7,
+        "time": "4:39.57",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 1,
+        "second_year_a": 4,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Mina Cannon",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Seaenna Correa-Garcia",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Rachel Power",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Alyssa Veneri",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Julianne Veneri",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Meakala Wilhelm",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1195",
+        "race_name": "Father`s Day Regatta",
+        "club": "Leeward Kai Canoe Club",
+        "place": 8,
+        "time": "4:40.58",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 1,
+        "second_year_a": 1,
+        "prior_a_history": 1,
+        "prior_b_history": 1,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Jazmine Baligad",
+            "classification": "unknown"
+          },
+          {
+            "name": "Nicole Brown",
+            "classification": "unknown"
+          },
+          {
+            "name": "Jazz Hokoana",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Jai Ibanez",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Lilinoe Kauweloa-Pilialoha",
+            "classification": "prior_a_history"
+          },
+          {
+            "name": "Kuulei Villasenor",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1195",
+        "race_name": "Father`s Day Regatta",
+        "club": "Honolulu Pearl Canoe Club",
+        "place": 9,
+        "time": "4:41.94",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 1,
+        "second_year_a": 4,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "CJ Cayanan",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Jemma Godbout",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Alicia Hendrix",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Amanda Marshall",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Diamond montoya",
+            "classification": "unknown"
+          },
+          {
+            "name": "Sadie Tate",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1195",
+        "race_name": "Father`s Day Regatta",
+        "club": "Healani Canoe Club",
+        "place": 10,
+        "time": "4:51.02",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 0,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 3,
+        "crew": [
+          {
+            "name": "Leli Laurie Chen",
+            "classification": "unknown"
+          },
+          {
+            "name": "Kanani D'Angelo",
+            "classification": "unknown"
+          },
+          {
+            "name": "Nikki Lum",
+            "classification": "unknown"
+          },
+          {
+            "name": "Salina Maielua",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Jessica McKenzie",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Mehana Ranney-Moore",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1195",
+        "race_name": "Father`s Day Regatta",
+        "club": "Ewa Pu`uloa Outrigger",
+        "place": 11,
+        "time": "5:34.62",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 0,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 4,
+        "crew": [
+          {
+            "name": "Nikki Blas-Lani",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Pumehana Blas-Lani",
+            "classification": "unknown"
+          },
+          {
+            "name": "Danielle Meachum",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Bri Palama",
+            "classification": "unknown"
+          },
+          {
+            "name": "Talia Pana",
+            "classification": "unknown"
+          },
+          {
+            "name": "Evie Torres",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1196",
+        "race_name": "Waimanalo Regatta",
+        "club": "Lanikai Canoe Club",
+        "place": 1,
+        "time": "4:49.27",
+        "points": 7.0,
+        "crew_size": 6,
+        "first_year_a": 1,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "MJ Barker",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Chrissy Casazza",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Kahala Companion",
+            "classification": "unknown"
+          },
+          {
+            "name": "Heather Kerkering",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Britt Rasmussen",
+            "classification": "unknown"
+          },
+          {
+            "name": "Remi Riehl",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1196",
+        "race_name": "Waimanalo Regatta",
+        "club": "Keahiakahoe Canoe Club",
+        "place": 2,
+        "time": "4:53.07",
+        "points": 5.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Alana Abbey",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Jess Cheshire",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Shelly Gary",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Irene Kon",
+            "classification": "unknown"
+          },
+          {
+            "name": "Paige Suniga",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Jess Wheeler",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1196",
+        "race_name": "Waimanalo Regatta",
+        "club": "Kailua Canoe Club",
+        "place": 3,
+        "time": "4:57.04",
+        "points": 4.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Stephanie Bossy",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Lila Castellano",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Tani Cromwell",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Kendall Hu",
+            "classification": "unknown"
+          },
+          {
+            "name": "Monica Nayakweadi-Singer",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Laura Vollert",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1196",
+        "race_name": "Waimanalo Regatta",
+        "club": "Waimanalo Canoe Club",
+        "place": 4,
+        "time": "4:57.48",
+        "points": 3.0,
+        "crew_size": 6,
+        "first_year_a": 4,
+        "second_year_a": 0,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Rae Halafihi",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Ka'u Kalama-Ohelo",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Sunnie Martinez",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Kawailele Pickering-Stevens",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Renell Soriano",
+            "classification": "unknown"
+          },
+          {
+            "name": "Taylor Spencer-Olsen",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1196",
+        "race_name": "Waimanalo Regatta",
+        "club": "Kai Oni Canoe Club",
+        "place": 5,
+        "time": "5:04.36",
+        "points": 2.0,
+        "crew_size": 6,
+        "first_year_a": 1,
+        "second_year_a": 4,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Mina Cannon",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Seaenna Correa-Garcia",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Rachel Power",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Alyssa Veneri",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Julianne Veneri",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Meakala Wilhelm",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1196",
+        "race_name": "Waimanalo Regatta",
+        "club": "Leeward Kai Canoe Club",
+        "place": 6,
+        "time": "5:06.35",
+        "points": 1.0,
+        "crew_size": 6,
+        "first_year_a": 1,
+        "second_year_a": 1,
+        "prior_a_history": 1,
+        "prior_b_history": 1,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Jazmine Baligad",
+            "classification": "unknown"
+          },
+          {
+            "name": "Nicole Brown",
+            "classification": "unknown"
+          },
+          {
+            "name": "Jai Ibanez",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Syndi Kahiapo",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Lilinoe Kauweloa-Pilialoha",
+            "classification": "prior_a_history"
+          },
+          {
+            "name": "Kuulei Villasenor",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1196",
+        "race_name": "Waimanalo Regatta",
+        "club": "Hui Nalu Canoe Club",
+        "place": 7,
+        "time": "5:06.89",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 0,
+        "crew": [
+          {
+            "name": "Christina Gray",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Alyssa Mahoe",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Cassidy Schmelter",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Megs Seeley",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Tammy Smith",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Gina Wataru",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1196",
+        "race_name": "Waimanalo Regatta",
+        "club": "Outrigger Canoe Club",
+        "place": 8,
+        "time": "5:08.24",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 1,
+        "prior_a_history": 0,
+        "prior_b_history": 1,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Anastasia David Demakas",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Katherine Kemp",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Emma Kenline",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Sierra Petrosky",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Jessica Schem",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Harlow Thomas",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1196",
+        "race_name": "Waimanalo Regatta",
+        "club": "Healani Canoe Club",
+        "place": 9,
+        "time": "5:16.08",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 2,
+        "second_year_a": 0,
+        "prior_a_history": 0,
+        "prior_b_history": 1,
+        "unknown": 3,
+        "crew": [
+          {
+            "name": "Kanani D'Angelo",
+            "classification": "unknown"
+          },
+          {
+            "name": "Krystal Fernandez",
+            "classification": "unknown"
+          },
+          {
+            "name": "Kirra Lindman",
+            "classification": "unknown"
+          },
+          {
+            "name": "Salina Maielua",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Alexas Presto-Ahsing",
+            "classification": "prior_b_history"
+          },
+          {
+            "name": "Mehana Ranney-Moore",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1196",
+        "race_name": "Waimanalo Regatta",
+        "club": "Honolulu Pearl Canoe Club",
+        "place": 10,
+        "time": "5:27.33",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 0,
+        "second_year_a": 4,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "CJ Cayanan",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Jemma Godbout",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Alicia Hendrix",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "PATIENCE LIKE",
+            "classification": "unknown"
+          },
+          {
+            "name": "Amanda Marshall",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Diamond montoya",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1196",
+        "race_name": "Waimanalo Regatta",
+        "club": "Ewa Pu`uloa Outrigger",
+        "place": 11,
+        "time": "6:55.36",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 0,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 4,
+        "crew": [
+          {
+            "name": "Nikki Blas-Lani",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Pumehana Blas-Lani",
+            "classification": "unknown"
+          },
+          {
+            "name": "Kamanu Hermosura",
+            "classification": "unknown"
+          },
+          {
+            "name": "Danielle Meachum",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Bri Palama",
+            "classification": "unknown"
+          },
+          {
+            "name": "Evie Torres",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1198",
+        "race_name": "John D. Kaupiko Regatta",
+        "club": "Hui Nalu Canoe Club",
+        "place": 1,
+        "time": "4:27.83",
+        "points": 7.0,
+        "crew_size": 6,
+        "first_year_a": 4,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 0,
+        "crew": [
+          {
+            "name": "Alyssa Mahoe",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Nicole Prince",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Cassidy Schmelter",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Megs Seeley",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Tammy Smith",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Jacey Van Wert",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1198",
+        "race_name": "John D. Kaupiko Regatta",
+        "club": "Kailua Canoe Club",
+        "place": 2,
+        "time": "4:28.35",
+        "points": 5.0,
+        "crew_size": 6,
+        "first_year_a": 2,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Stephanie Bossy",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Tani Cromwell",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Nicole Duncan",
+            "classification": "unknown"
+          },
+          {
+            "name": "Kendall Hu",
+            "classification": "unknown"
+          },
+          {
+            "name": "Monica Nayakweadi-Singer",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Laura Vollert",
+            "classification": "second_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1198",
+        "race_name": "John D. Kaupiko Regatta",
+        "club": "Lanikai Canoe Club",
+        "place": 3,
+        "time": "4:33.66",
+        "points": 4.0,
+        "crew_size": 6,
+        "first_year_a": 1,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 1,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "MJ Barker",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Chrissy Casazza",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Kahala Companion",
+            "classification": "unknown"
+          },
+          {
+            "name": "Heather Kerkering",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Remi Riehl",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Katie Stevens",
+            "classification": "prior_b_history"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1198",
+        "race_name": "John D. Kaupiko Regatta",
+        "club": "Outrigger Canoe Club",
+        "place": 4,
+        "time": "4:34.17",
+        "points": 3.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 1,
+        "unknown": 0,
+        "crew": [
+          {
+            "name": "Anastasia David Demakas",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Cassandra Forsyth",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Katherine Kemp",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Emma Kenline",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Kali Larson",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Jessica Schem",
+            "classification": "prior_b_history"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1198",
+        "race_name": "John D. Kaupiko Regatta",
+        "club": "Waimanalo Canoe Club",
+        "place": 5,
+        "time": "4:38.41",
+        "points": 2.0,
+        "crew_size": 6,
+        "first_year_a": 4,
+        "second_year_a": 0,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Rae Halafihi",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Ka'u Kalama-Ohelo",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Sunnie Martinez",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Kawailele Pickering-Stevens",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Renell Soriano",
+            "classification": "unknown"
+          },
+          {
+            "name": "Taylor Spencer-Olsen",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1198",
+        "race_name": "John D. Kaupiko Regatta",
+        "club": "Keahiakahoe Canoe Club",
+        "place": 6,
+        "time": "4:47.60",
+        "points": 1.0,
+        "crew_size": 6,
+        "first_year_a": 3,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Alana Abbey",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Jess Cheshire",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Shelly Gary",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Irene Kon",
+            "classification": "unknown"
+          },
+          {
+            "name": "Paige Suniga",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Jess Wheeler",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1198",
+        "race_name": "John D. Kaupiko Regatta",
+        "club": "Kai Oni Canoe Club",
+        "place": 7,
+        "time": "4:55.49",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 1,
+        "second_year_a": 4,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 1,
+        "crew": [
+          {
+            "name": "Mina Cannon",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Seaenna Correa-Garcia",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Rachel Power",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Alyssa Veneri",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Julianne Veneri",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Meakala Wilhelm",
+            "classification": "unknown"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1198",
+        "race_name": "John D. Kaupiko Regatta",
+        "club": "Honolulu Pearl Canoe Club",
+        "place": 8,
+        "time": "5:06.07",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 1,
+        "second_year_a": 3,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Jemma Godbout",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Alicia Hendrix",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "PATIENCE LIKE",
+            "classification": "unknown"
+          },
+          {
+            "name": "Amanda Marshall",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Diamond montoya",
+            "classification": "unknown"
+          },
+          {
+            "name": "Sam Wuchter",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1198",
+        "race_name": "John D. Kaupiko Regatta",
+        "club": "Healani Canoe Club",
+        "place": 9,
+        "time": "5:14.88",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 2,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 2,
+        "crew": [
+          {
+            "name": "Melaree Ah Ho",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Leli Laurie Chen",
+            "classification": "unknown"
+          },
+          {
+            "name": "Nikki Lum",
+            "classification": "unknown"
+          },
+          {
+            "name": "Jessica McKenzie",
+            "classification": "first_year_a"
+          },
+          {
+            "name": "Kaylee Miki",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Ma'ele Norquist",
+            "classification": "first_year_a"
+          }
+        ]
+      },
+      {
+        "event": "Women Novice A",
+        "race_id": "1198",
+        "race_name": "John D. Kaupiko Regatta",
+        "club": "Ewa Pu`uloa Outrigger",
+        "place": 10,
+        "time": "5:46.68",
+        "points": 0.0,
+        "crew_size": 6,
+        "first_year_a": 0,
+        "second_year_a": 2,
+        "prior_a_history": 0,
+        "prior_b_history": 0,
+        "unknown": 4,
+        "crew": [
+          {
+            "name": "Nikki Blas-Lani",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Pumehana Blas-Lani",
+            "classification": "unknown"
+          },
+          {
+            "name": "Kamanu Hermosura",
+            "classification": "unknown"
+          },
+          {
+            "name": "Danielle Meachum",
+            "classification": "second_year_a"
+          },
+          {
+            "name": "Talia Pana",
+            "classification": "unknown"
+          },
+          {
+            "name": "Evie Torres",
+            "classification": "unknown"
+          }
+        ]
+      }
+    ]
+  }
+}
