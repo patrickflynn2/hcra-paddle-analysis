@@ -18,9 +18,14 @@ const rosterLabels = [
 const numberFormat = new Intl.NumberFormat("en-US", { maximumFractionDigits: 1 });
 let allRosterEntries = [];
 let rosterEntries = [];
+let selectedRosterGender = "all";
 
 function fmt(value) {
   return numberFormat.format(value);
+}
+
+function unit(count, singular, plural = `${singular}s`) {
+  return count === 1 ? singular : plural;
 }
 
 function seconds(value) {
@@ -62,10 +67,14 @@ function yearCard(item) {
 }
 
 
-function evidenceGender(eventName) {
+function noviceGender(eventName) {
   if (eventName.startsWith("Men ")) return "Men";
   if (eventName.startsWith("Women ")) return "Women";
   return "Other";
+}
+
+function evidenceGender(eventName) {
+  return noviceGender(eventName);
 }
 
 function filterOption(value, label = value) {
@@ -209,33 +218,49 @@ function rosterCountPill(team, key, label) {
   return `<span>${unique} unique ${label} ${paddlerWord} with ${appearances} ${appearanceWord}</span>`;
 }
 
+function populateRosterFilters(teams) {
+  const genders = [...new Set(teams.map((team) => noviceGender(team.event)))].sort();
+  const current = selectedRosterGender;
+  document.querySelector("#roster-gender-filter").innerHTML =
+    filterOption("all", "All genders") + genders.map((gender) => filterOption(gender)).join("");
+  document.querySelector("#roster-gender-filter").value = genders.includes(current) ? current : "all";
+  selectedRosterGender = document.querySelector("#roster-gender-filter").value;
+}
+
 function renderRosterTeams(data) {
-  const teams = data.current_roster_composition.teams
+  const allTeams = data.current_roster_composition.teams
     .filter((team) => team.entries >= 2)
     .sort((a, b) => a.event.localeCompare(b.event) || b.points - a.points);
+  populateRosterFilters(allTeams);
+
+  const teams = allTeams.filter(
+    (team) => selectedRosterGender === "all" || noviceGender(team.event) === selectedRosterGender
+  );
 
   const firstLeans = teams.filter((team) => team.lean === "mostly_first_year_a").length;
   const secondLeans = teams.filter((team) => team.lean === "mostly_second_year_a").length;
+  const genderPhrase = selectedRosterGender === "all" ? "" : `${selectedRosterGender.toLowerCase()} `;
   document.querySelector("#roster-story").textContent =
-    `Using 2025 OHCRA season-standing rosters as the lookback, ${firstLeans} club-event crews lean first-year Novice A and ${secondLeans} lean second-year Novice A. Unknowns usually mean the paddler did not appear in the downloaded same-gender novice history, not that they are ineligible.`;
+    `Using 2025 OHCRA season-standing rosters as the lookback, ${firstLeans} ${genderPhrase}club-event crews lean first-year Novice A and ${secondLeans} lean second-year Novice A. Unknowns usually mean the paddler did not appear in the downloaded same-gender novice history, not that they are ineligible.`;
 
-  document.querySelector("#roster-team-grid").innerHTML = teams
-    .map(
-      (team) => `
-        <article class="roster-card">
-          <small>${team.event}</small>
-          <h3>${team.club}</h3>
-          <p>${fmt(team.points)} points Â· ${team.entries} entries Â· ${team.wins} wins Â· ${team.podiums} podiums</p>
-          <div class="composition-bar">${compositionBars(team)}</div>
-          <div class="roster-counts">
-            ${rosterLabels.map(([key, label]) => rosterCountPill(team, key, label)).join("")}
-          </div>
-        </article>
-      `
-    )
-    .join("");
+  document.querySelector("#roster-team-grid").innerHTML = teams.length
+    ? teams
+        .map(
+          (team) => `
+            <article class="roster-card">
+              <small>${team.event}</small>
+              <h3>${team.club}</h3>
+              <p>${fmt(team.points)} ${unit(team.points, "point")} - ${team.entries} ${unit(team.entries, "entry", "entries")} - ${team.wins} ${unit(team.wins, "win")} - ${team.podiums} ${unit(team.podiums, "podium")}</p>
+              <div class="composition-bar">${compositionBars(team)}</div>
+              <div class="roster-counts">
+                ${rosterLabels.map(([key, label]) => rosterCountPill(team, key, label)).join("")}
+              </div>
+            </article>
+          `
+        )
+        .join("")
+    : `<article class="roster-card"><p>No roster cards match this gender filter.</p></article>`;
 }
-
 function renderRosterEntries(data) {
   allRosterEntries = data.current_roster_composition.entries
     .filter((entry) => entry.place != null)
@@ -252,7 +277,7 @@ function crewClassificationSummary(entry) {
     [entry.prior_a_history + entry.prior_b_history, "prior-history"],
     [entry.unknown, "unknown"],
   ].filter(([count]) => count > 0);
-  return pieces.map(([count, label]) => `${count} ${label}`).join(" Â· ");
+  return pieces.map(([count, label]) => `${count} ${label}`).join(" - ");
 }
 
 function openCrewDetail(index) {
@@ -270,7 +295,7 @@ function openCrewDetail(index) {
   document.querySelector("#crew-sheet-kicker").textContent = entry.event;
   document.querySelector("#crew-sheet-title").textContent = entry.club;
   document.querySelector("#crew-sheet-meta").textContent =
-    `${entry.race_name} Â· place ${entry.place} Â· ${entry.time || "no time"} Â· ${crewClassificationSummary(entry)}`;
+    `${entry.race_name} - place ${entry.place} - ${entry.time || "no time"} - ${crewClassificationSummary(entry)}`;
 
   document.querySelector("#crew-group-list").innerHTML = groups
     .map(([classification, label, note]) => {
@@ -301,7 +326,7 @@ function closeCrewDetail() {
 }
 
 async function init() {
-  const response = await fetch("data/novice.json?v=novice-filters1");
+  const response = await fetch("data/novice.json?v=novice-roster-filter1");
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const data = await response.json();
 
@@ -309,6 +334,11 @@ async function init() {
   renderSeasonCards(data);
   renderRosterTeams(data);
   renderRosterEntries(data);
+
+  document.querySelector("#roster-gender-filter").addEventListener("change", (event) => {
+    selectedRosterGender = event.target.value;
+    renderRosterTeams(data);
+  });
 
   document.querySelectorAll("#evidence-gender-filter, #evidence-club-filter, #evidence-place-filter").forEach((filter) => {
     filter.addEventListener("change", applyEvidenceFilters);
@@ -332,6 +362,11 @@ init().catch(() => {
   document.querySelector("#novice-hero-copy").textContent =
     "Novice analysis data is missing. Run scripts/build_novice_data.py.";
 });
+
+
+
+
+
 
 
 

@@ -9,10 +9,10 @@
   <body>
     <header class="story-hero novice-hero">
       <nav class="site-nav" aria-label="Site">
-        <a href="analysis.html">Story</a>
-        <a href="novice.html" aria-current="page">Novice</a>
+        <a href="qualification.html">States Qualification</a>
+        <a href="analysis.html">Club Analysis</a>
+        <a href="novice.html" aria-current="page">Novice Program</a>
         <a href="dqs.html">DQs</a>
-        <a href="qualification.html">Qualify</a>
         <a href="index.html">Explorer</a>
       </nav>
       <div class="story-hero-text">
@@ -52,6 +52,14 @@
           <span><i class="legend second"></i> Second-year A signal</span>
           <span><i class="legend history"></i> Older novice history</span>
           <span><i class="legend unknown"></i> Unknown</span>
+        </div>
+                <div class="evidence-filters roster-filters" aria-label="Novice A roster filters">
+          <label>
+            Gender
+            <select id="roster-gender-filter">
+              <option value="all">All genders</option>
+            </select>
+          </label>
         </div>
         <div class="roster-team-grid" id="roster-team-grid"></div>
       </section>
@@ -113,15 +121,17 @@
             <h2 id="crew-sheet-title">Crew</h2>
             <p id="crew-sheet-meta"></p>
           </div>
-          <button class="icon-close" type="button" data-close-crew aria-label="Close crew detail">Ã—</button>
+          <button class="icon-close" type="button" data-close-crew aria-label="Close crew detail">x</button>
         </div>
         <div class="crew-group-list" id="crew-group-list"></div>
       </section>
     </div>
 
-    <script src="novice.js?v=novice-filters1"></script>
+    <script src="novice.js?v=novice-roster-filter1"></script>
   </body>
 </html>
+
+
 
 
 
