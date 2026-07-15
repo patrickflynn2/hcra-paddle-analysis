@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>2026 Macfarlane Points Race</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="macfarlane-page">
+    <header class="story-hero macfarlane-hero">
+      <nav class="site-nav" aria-label="Site">
+        <a href="qualification.html">States Qualification</a>
+        <a href="analysis.html">Club Analysis</a>
+        <a href="novice.html">Novice Program</a>
+        <a href="macfarlane.html" aria-current="page">Macfarlane</a>
+        <a href="dqs.html">DQs</a>
+        <a href="index.html">Explorer</a>
+      </nav>
+      <div class="story-hero-text">
+        <p class="eyebrow">Walter J. MacFarlane Regatta · 2026</p>
+        <h1>Waikiki Beach</h1>
+      </div>
+    </header>
+    <main class="macfarlane-main">
+      <section class="race-card" aria-labelledby="race-title">
+        <div class="race-heading">
+          <div><p class="section-kicker">Now scoring</p><h2 id="race-title" aria-live="polite">Ready to race</h2></div>
+          <div class="race-controls"><button id="play-button" type="button">Play</button><button id="replay-button" type="button">Replay</button></div>
+        </div>
+        <div class="race-chart" id="race-chart" aria-label="Animated club points standings"></div>
+        <div class="race-axis" aria-hidden="true"><span>0</span><span>25</span><span>50</span><span>75</span><span>100</span><span>125</span><span>150</span><span>177</span></div>
+        <div class="race-progress"><span id="race-progress-bar"></span></div>
+        <p class="race-note" id="race-status">Loading 2026 results…</p>
+      </section>
+
+      <section class="mac-insights" aria-labelledby="insights-title">
+        <div class="mac-year-head">
+          <div>
+            <p class="section-kicker">Explore the regatta</p>
+            <h2 id="insights-title">How points and lanes shaped the results</h2>
+          </div>
+          <label class="mac-year-filter">Year
+            <select id="mac-year"><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option></select>
+          </label>
+        </div>
+
+        <article class="mac-panel" aria-labelledby="composition-title">
+          <p class="section-kicker">Program composition</p>
+          <h3 id="composition-title">How each club assembled its points</h3>
+          <p class="mac-panel-copy">Each bar is the club’s full official total, split by program.</p>
+          <div class="mac-legend" id="composition-legend"></div>
+          <div class="composition-chart" id="composition-chart"></div>
+        </article>
+
+        <article class="mac-panel" aria-labelledby="lanes-title">
+          <p class="section-kicker">Lane conditions</p>
+          <h3 id="lanes-title">Which lanes produced the best finishes?</h3>
+          <p class="mac-panel-copy" id="lane-summary"></p>
+          <div class="lane-chart" id="lane-chart"></div>
+          <p class="race-note">Finish percentile adjusts for field size: 100 is a win and 0 is last place. DQs are reported separately and are not included in the percentile average. Source: <a id="lane-source" href="#" target="_blank" rel="noreferrer">official Event by Lane results</a>.</p>
+        </article>
+      </section>
+    </main>
+    <script src="macfarlane.js?v=1"></script>
+  </body>
+</html>

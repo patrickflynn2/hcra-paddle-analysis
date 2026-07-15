@@ -6,7 +6,7 @@ import json
 import re
 from collections import Counter, defaultdict
 from pathlib import Path
-from statistics import mean
+from statistics import mean, median
 from typing import Any
 
 
@@ -204,6 +204,127 @@ def season_competitiveness(rows: list[dict[str, Any]]) -> dict[str, list[dict[st
     return output
 
 
+def top_three_median(group: list[dict[str, Any]]) -> float | None:
+    finishers = sorted(
+        (row for row in group if row["place"] is not None and row["time_seconds"] is not None),
+        key=lambda row: row["place"],
+    )
+    if len(finishers) < 3 or [row["place"] for row in finishers[:3]] != [1, 2, 3]:
+        return None
+    return float(finishers[1]["time_seconds"])
+
+
+def novice_b_pace(rows: list[dict[str, Any]]) -> dict[str, Any]:
+    """Compare front-of-field Novice B pace after a robust race-day adjustment."""
+    by_race_event: dict[tuple[int, str, int], list[dict[str, Any]]] = defaultdict(list)
+    for row in rows:
+        by_race_event[(row["season"], row["race_id"], row["event_number"])].append(row)
+
+    observations = []
+    for (season, race_id, event_number), group in by_race_event.items():
+        pace = top_three_median(group)
+        if pace is None:
+            continue
+        sample = group[0]
+        observations.append({
+            "season": season,
+            "race_id": race_id,
+            "race_name": sample["race_name"],
+            "event_number": event_number,
+            "event_name": normalize_event_name(sample["event_name"]),
+            "pace": pace,
+            "field": sum(row["place"] is not None for row in group),
+            "spread": round(
+                max(row["time_seconds"] for row in group if row["place"] == 3)
+                - min(row["time_seconds"] for row in group if row["place"] == 1),
+                2,
+            ),
+        })
+
+    event_baselines: dict[tuple[int, str], float] = {}
+    for key in {(item["season"], item["event_name"]) for item in observations}:
+        values = [item["pace"] for item in observations if (item["season"], item["event_name"]) == key]
+        if len(values) >= 3:
+            event_baselines[key] = median(values)
+
+    race_factors: dict[tuple[int, str], dict[str, Any]] = {}
+    for season, race_id in {(item["season"], item["race_id"]) for item in observations}:
+        ratios = []
+        for item in observations:
+            if item["season"] != season or item["race_id"] != race_id or novice_event(item["event_name"]) in {"Men Novice B", "Women Novice B"}:
+                continue
+            baseline = event_baselines.get((season, item["event_name"]))
+            if baseline:
+                ratio = item["pace"] / baseline
+                if 0.65 <= ratio <= 1.5:
+                    ratios.append(ratio)
+        if len(ratios) >= 8:
+            race_factors[(season, race_id)] = {
+                "factor": median(ratios),
+                "benchmarks": len(ratios),
+            }
+
+    target_races = []
+    for item in observations:
+        event = novice_event(item["event_name"])
+        if event not in {"Men Novice B", "Women Novice B"}:
+            continue
+        factor = race_factors.get((item["season"], item["race_id"]))
+        if factor is None:
+            continue
+        gender = event.split()[0]
+        era = "half_mile" if gender == "Men" and item["season"] < 2024 else "quarter_mile"
+        target_races.append({
+            **item,
+            "event": event,
+            "gender": gender,
+            "era": era,
+            "course_factor": round(factor["factor"], 4),
+            "benchmark_events": factor["benchmarks"],
+            "adjusted_pace": item["pace"] / factor["factor"],
+        })
+
+    era_baselines = {}
+    for gender in ("Men", "Women"):
+        for era in ("half_mile", "quarter_mile"):
+            values = [item["adjusted_pace"] for item in target_races if item["gender"] == gender and item["era"] == era]
+            if values:
+                era_baselines[(gender, era)] = median(values)
+
+    seasons = {"Men Novice B": [], "Women Novice B": []}
+    for event in seasons:
+        for season in sorted({item["season"] for item in target_races if item["event"] == event}):
+            items = [item for item in target_races if item["event"] == event and item["season"] == season]
+            era = items[0]["era"]
+            baseline = era_baselines[(items[0]["gender"], era)]
+            adjusted = median(item["adjusted_pace"] for item in items)
+            raw = median(item["pace"] for item in items)
+            index = 100 * baseline / adjusted
+            seasons[event].append({
+                "season": season,
+                "era": era,
+                "distance_label": "1/2 mile" if era == "half_mile" else "1/4 mile",
+                "races": len(items),
+                "raw_top_three_median_seconds": round(raw, 2),
+                "adjusted_top_three_median_seconds": round(adjusted, 2),
+                "pace_index": round(index, 1),
+                "difference_from_era_pct": round(index - 100, 1),
+                "median_first_to_third_seconds": round(median(item["spread"] for item in items), 2),
+                "average_front_field": round(mean(item["field"] for item in items), 1),
+                "median_benchmark_events": int(median(item["benchmark_events"] for item in items)),
+            })
+
+    return {
+        "method": {
+            "headline_metric": "Median second-place time, adjusted by same-day course factor",
+            "index_definition": "100 is the typical pace within the same gender and distance era; above 100 is faster.",
+            "distance_note": "Men Novice B is treated as 1/2 mile through 2023 and 1/4 mile from 2024; Women Novice B is treated as 1/4 mile throughout this dataset.",
+            "minimum_benchmark_events": 8,
+        },
+        "seasons": seasons,
+    }
+
+
 def build_person_history(rows: list[dict[str, Any]]) -> dict[str, set[tuple[int, str]]]:
     history: dict[str, set[tuple[int, str]]] = defaultdict(set)
     for row in rows:
@@ -379,6 +500,7 @@ def main() -> None:
             },
         },
         "season_competitiveness": season_competitiveness(core_rows),
+        "novice_b_pace": novice_b_pace(core_rows),
         "current_roster_composition": roster_composition(core_rows),
     }
 

@@ -310,30 +310,6 @@ function renderAverageMargins(data) {
     .join("");
 }
 
-function renderFastest(data) {
-  const winners = data.fastest_winning_times
-    .filter((item) => categoryOrder.includes(item.category))
-    .sort((a, b) => a.event_name.localeCompare(b.event_name, undefined, { numeric: true }))
-    .slice(0, 30);
-
-  document.querySelector("#fastest-intro").textContent =
-    "The table below keeps one fastest winning time per event across OHCRA season-standing races. MacFarlane and States are intentionally excluded from these benchmarks.";
-
-  document.querySelector("#fastest-body").innerHTML = winners
-    .map(
-      (item) => `
-        <tr>
-          <td>${item.event_name}</td>
-          <td>${item.club}</td>
-          <td>${item.race_name}</td>
-          <td>${item.season}</td>
-          <td><strong>${item.time}</strong></td>
-        </tr>
-      `
-    )
-    .join("");
-}
-
 async function init() {
   const response = await fetch("data/analysis.json?v=refresh-2026-1198");
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
@@ -349,8 +325,6 @@ async function init() {
   renderSpecializations(data);
   renderClosest(data);
   renderAverageMargins(data);
-  renderFastest(data);
-
   document.querySelector("#profile-list").addEventListener("click", (event) => {
     const button = event.target.closest("[data-profile-index]");
     if (!button) return;

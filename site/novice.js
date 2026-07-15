@@ -135,43 +135,6 @@ function applyEvidenceFilters() {
         .join("")
     : `<tr><td colspan="8">No race entries match these filters.</td></tr>`;
 }
-function renderMenBStory(data) {
-  const seasons = data.season_competitiveness["Men Novice B"];
-  const year2025 = seasons.find((item) => item.season === 2025);
-  const easiestMargin = seasons.reduce((best, item) =>
-    item.average_margin_seconds > best.average_margin_seconds ? item : best
-  );
-  const deepestField = seasons.reduce((best, item) =>
-    item.average_entries > best.average_entries ? item : best
-  );
-
-  document.querySelector("#men-b-story").textContent =
-    `Short answer: 2025 does not look easy by the competitiveness signals. ${year2025.most_wins_club} won all ${year2025.races} Men Novice B races, but the average winning margin was only ${seconds(year2025.average_margin_seconds)} with ${fmt(year2025.average_entries)} boats per race. That reads more like one crew consistently handling pressure than a soft field.`;
-
-  document.querySelector("#men-b-callouts").innerHTML = `
-    <article>
-      <span>${year2025.most_wins}</span>
-      <small>${year2025.most_wins_club} wins in 2025</small>
-    </article>
-    <article>
-      <span>${seconds(year2025.average_margin_seconds)}</span>
-      <small>2025 average winning margin</small>
-    </article>
-    <article>
-      <span>${fmt(year2025.average_entries)}</span>
-      <small>2025 average boats per race</small>
-    </article>
-    <article>
-      <span>${deepestField.season}</span>
-      <small>deepest average field</small>
-    </article>
-    <article>
-      <span>${easiestMargin.season}</span>
-      <small>largest average margin</small>
-    </article>
-  `;
-}
-
 function renderSeasonCards(data) {
   document.querySelector("#novice-event-stack").innerHTML = eventOrder
     .map((eventName) => {
@@ -185,6 +148,42 @@ function renderSeasonCards(data) {
           <div class="year-card-grid">${cards}</div>
         </section>
       `;
+    })
+    .join("");
+}
+
+function paceTime(value) {
+  const minutes = Math.floor(value / 60);
+  const secs = (value % 60).toFixed(1).padStart(4, "0");
+  return `${minutes}:${secs}`;
+}
+
+function renderNovicePace(data) {
+  const analysis = data.novice_b_pace;
+  document.querySelector("#novice-pace-grid").innerHTML = ["Men Novice B", "Women Novice B"]
+    .map((eventName) => {
+      const seasons = analysis.seasons[eventName];
+      const comparable = seasons.filter((item) => eventName.startsWith("Women") || item.era === "quarter_mile");
+      const fastest = comparable.reduce((best, item) => item.pace_index > best.pace_index ? item : best);
+      const rows = seasons.map((item) => {
+        const position = Math.max(0, Math.min(100, ((item.pace_index - 90) / 20) * 100));
+        const difference = item.difference_from_era_pct;
+        const paceLabel = difference > 0.05 ? `${fmt(difference)}% faster` : difference < -0.05 ? `${fmt(Math.abs(difference))}% slower` : "typical";
+        const isolated = eventName.startsWith("Men") && item.era === "half_mile";
+        return `
+          <div class="pace-year-row ${isolated ? "pace-isolated" : ""}">
+            <div class="pace-year"><strong>${item.season}</strong><small>${item.distance_label}</small></div>
+            <div class="pace-track"><i></i><span style="left:${position}%" title="Pace index ${item.pace_index}"></span></div>
+            <div class="pace-result"><strong>${item.pace_index}</strong><small>${isolated ? "separate baseline" : paceLabel}</small></div>
+            <div class="pace-details"><span>${paceTime(item.raw_top_three_median_seconds)} raw</span><span>${fmt(item.median_first_to_third_seconds)}s 1st–3rd</span><span>${item.races} races</span></div>
+          </div>`;
+      }).join("");
+      return `
+        <article class="pace-card">
+          <div class="pace-card-head"><div><p class="section-kicker">${eventName}</p><h3>${fastest.season} set the fastest comparable pace</h3></div><strong>${fastest.pace_index}</strong></div>
+          <p>${eventName.startsWith("Men") ? "Quarter-mile comparison uses 2024 onward; 2023 is shown only as its half-mile baseline." : "All four seasons use the quarter-mile comparison."}</p>
+          <div class="pace-year-list">${rows}</div>
+        </article>`;
     })
     .join("");
 }
@@ -330,8 +329,8 @@ async function init() {
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const data = await response.json();
 
-  renderMenBStory(data);
   renderSeasonCards(data);
+  renderNovicePace(data);
   renderRosterTeams(data);
   renderRosterEntries(data);
 

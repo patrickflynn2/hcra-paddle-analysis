@@ -866,6 +866,124 @@
       }
     ]
   },
+  "novice_b_pace": {
+    "method": {
+      "headline_metric": "Median second-place time, adjusted by same-day course factor",
+      "index_definition": "100 is the typical pace within the same gender and distance era; above 100 is faster.",
+      "distance_note": "Men Novice B is treated as 1/2 mile through 2023 and 1/4 mile from 2024; Women Novice B is treated as 1/4 mile throughout this dataset.",
+      "minimum_benchmark_events": 8
+    },
+    "seasons": {
+      "Men Novice B": [
+        {
+          "season": 2023,
+          "era": "half_mile",
+          "distance_label": "1/2 mile",
+          "races": 6,
+          "raw_top_three_median_seconds": 246.62,
+          "adjusted_top_three_median_seconds": 242.43,
+          "pace_index": 100.0,
+          "difference_from_era_pct": 0.0,
+          "median_first_to_third_seconds": 6.37,
+          "average_front_field": 7.5,
+          "median_benchmark_events": 42
+        },
+        {
+          "season": 2024,
+          "era": "quarter_mile",
+          "distance_label": "1/4 mile",
+          "races": 6,
+          "raw_top_three_median_seconds": 112.66,
+          "adjusted_top_three_median_seconds": 115.01,
+          "pace_index": 96.3,
+          "difference_from_era_pct": -3.7,
+          "median_first_to_third_seconds": 5.07,
+          "average_front_field": 10.8,
+          "median_benchmark_events": 42
+        },
+        {
+          "season": 2025,
+          "era": "quarter_mile",
+          "distance_label": "1/4 mile",
+          "races": 6,
+          "raw_top_three_median_seconds": 108.22,
+          "adjusted_top_three_median_seconds": 108.79,
+          "pace_index": 101.8,
+          "difference_from_era_pct": 1.8,
+          "median_first_to_third_seconds": 2.92,
+          "average_front_field": 11.7,
+          "median_benchmark_events": 41
+        },
+        {
+          "season": 2026,
+          "era": "quarter_mile",
+          "distance_label": "1/4 mile",
+          "races": 5,
+          "raw_top_three_median_seconds": 116.55,
+          "adjusted_top_three_median_seconds": 115.06,
+          "pace_index": 96.2,
+          "difference_from_era_pct": -3.8,
+          "median_first_to_third_seconds": 6.73,
+          "average_front_field": 11.2,
+          "median_benchmark_events": 42
+        }
+      ],
+      "Women Novice B": [
+        {
+          "season": 2023,
+          "era": "quarter_mile",
+          "distance_label": "1/4 mile",
+          "races": 6,
+          "raw_top_three_median_seconds": 134.72,
+          "adjusted_top_three_median_seconds": 137.04,
+          "pace_index": 98.5,
+          "difference_from_era_pct": -1.5,
+          "median_first_to_third_seconds": 9.93,
+          "average_front_field": 11.5,
+          "median_benchmark_events": 42
+        },
+        {
+          "season": 2024,
+          "era": "quarter_mile",
+          "distance_label": "1/4 mile",
+          "races": 6,
+          "raw_top_three_median_seconds": 131.29,
+          "adjusted_top_three_median_seconds": 133.9,
+          "pace_index": 100.8,
+          "difference_from_era_pct": 0.8,
+          "median_first_to_third_seconds": 9.34,
+          "average_front_field": 10,
+          "median_benchmark_events": 42
+        },
+        {
+          "season": 2025,
+          "era": "quarter_mile",
+          "distance_label": "1/4 mile",
+          "races": 6,
+          "raw_top_three_median_seconds": 135.01,
+          "adjusted_top_three_median_seconds": 135.53,
+          "pace_index": 99.6,
+          "difference_from_era_pct": -0.4,
+          "median_first_to_third_seconds": 6.92,
+          "average_front_field": 13.3,
+          "median_benchmark_events": 41
+        },
+        {
+          "season": 2026,
+          "era": "quarter_mile",
+          "distance_label": "1/4 mile",
+          "races": 5,
+          "raw_top_three_median_seconds": 124.39,
+          "adjusted_top_three_median_seconds": 128.38,
+          "pace_index": 105.1,
+          "difference_from_era_pct": 5.1,
+          "median_first_to_third_seconds": 2.92,
+          "average_front_field": 14.2,
+          "median_benchmark_events": 42
+        }
+      ]
+    }
+  },
   "current_roster_composition": {
     "teams": [
       {

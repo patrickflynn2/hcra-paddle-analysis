@@ -1,0 +1,520 @@
+{
+  "years": {
+    "2023": {
+      "race_id": "932",
+      "composition": [
+        {
+          "club": "Outrigger Canoe Club",
+          "total": 186,
+          "youth": 53,
+          "novice": 20,
+          "open": 39,
+          "masters": 61,
+          "mixed": 13
+        },
+        {
+          "club": "Lanikai Canoe Club",
+          "total": 196,
+          "youth": 60,
+          "novice": 21,
+          "open": 47,
+          "masters": 59,
+          "mixed": 9
+        },
+        {
+          "club": "Keahiakahoe Canoe Club",
+          "total": 75,
+          "youth": 23,
+          "novice": 6,
+          "open": 22,
+          "masters": 17,
+          "mixed": 7
+        },
+        {
+          "club": "Hui Nalu Canoe Club",
+          "total": 156,
+          "youth": 49,
+          "novice": 20,
+          "open": 32,
+          "masters": 45,
+          "mixed": 10
+        }
+      ],
+      "lanes": [
+        {
+          "lane": 1,
+          "entries": 40,
+          "finishes": 36,
+          "wins": 2,
+          "podiums": 9,
+          "dqs": 4,
+          "average_place": 5.03,
+          "finish_percentile": 32.5,
+          "win_rate": 5.0,
+          "podium_rate": 22.5
+        },
+        {
+          "lane": 2,
+          "entries": 42,
+          "finishes": 41,
+          "wins": 3,
+          "podiums": 12,
+          "dqs": 1,
+          "average_place": 4.54,
+          "finish_percentile": 39.3,
+          "win_rate": 7.1,
+          "podium_rate": 28.6
+        },
+        {
+          "lane": 3,
+          "entries": 44,
+          "finishes": 43,
+          "wins": 12,
+          "podiums": 25,
+          "dqs": 1,
+          "average_place": 3.16,
+          "finish_percentile": 61.9,
+          "win_rate": 27.3,
+          "podium_rate": 56.8
+        },
+        {
+          "lane": 4,
+          "entries": 44,
+          "finishes": 44,
+          "wins": 6,
+          "podiums": 24,
+          "dqs": 0,
+          "average_place": 3.52,
+          "finish_percentile": 55.9,
+          "win_rate": 13.6,
+          "podium_rate": 54.5
+        },
+        {
+          "lane": 5,
+          "entries": 44,
+          "finishes": 43,
+          "wins": 16,
+          "podiums": 27,
+          "dqs": 1,
+          "average_place": 2.86,
+          "finish_percentile": 68.3,
+          "win_rate": 36.4,
+          "podium_rate": 61.4
+        },
+        {
+          "lane": 6,
+          "entries": 42,
+          "finishes": 40,
+          "wins": 3,
+          "podiums": 18,
+          "dqs": 2,
+          "average_place": 3.88,
+          "finish_percentile": 49.6,
+          "win_rate": 7.1,
+          "podium_rate": 42.9
+        },
+        {
+          "lane": 7,
+          "entries": 41,
+          "finishes": 38,
+          "wins": 2,
+          "podiums": 17,
+          "dqs": 3,
+          "average_place": 3.84,
+          "finish_percentile": 51.4,
+          "win_rate": 4.9,
+          "podium_rate": 41.5
+        }
+      ],
+      "source_url": "https://www.hcrapaddler.com/hcra_results.php?rid=932&view=bylane",
+      "unmatched_entries": 0
+    },
+    "2024": {
+      "race_id": "1011",
+      "composition": [
+        {
+          "club": "Outrigger Canoe Club",
+          "total": 161,
+          "youth": 46,
+          "novice": 26,
+          "open": 41,
+          "masters": 42,
+          "mixed": 6
+        },
+        {
+          "club": "Lanikai Canoe Club",
+          "total": 211,
+          "youth": 62,
+          "novice": 17,
+          "open": 55,
+          "masters": 64,
+          "mixed": 13
+        },
+        {
+          "club": "Keahiakahoe Canoe Club",
+          "total": 73,
+          "youth": 27,
+          "novice": 5,
+          "open": 23,
+          "masters": 13,
+          "mixed": 5
+        },
+        {
+          "club": "Hui Nalu Canoe Club",
+          "total": 121,
+          "youth": 40,
+          "novice": 5,
+          "open": 24,
+          "masters": 47,
+          "mixed": 5
+        }
+      ],
+      "lanes": [
+        {
+          "lane": 1,
+          "entries": 42,
+          "finishes": 42,
+          "wins": 1,
+          "podiums": 9,
+          "dqs": 0,
+          "average_place": 4.86,
+          "finish_percentile": 34.1,
+          "win_rate": 2.4,
+          "podium_rate": 21.4
+        },
+        {
+          "lane": 2,
+          "entries": 44,
+          "finishes": 42,
+          "wins": 3,
+          "podiums": 19,
+          "dqs": 2,
+          "average_place": 4.0,
+          "finish_percentile": 47.5,
+          "win_rate": 6.8,
+          "podium_rate": 43.2
+        },
+        {
+          "lane": 3,
+          "entries": 43,
+          "finishes": 42,
+          "wins": 5,
+          "podiums": 27,
+          "dqs": 1,
+          "average_place": 3.24,
+          "finish_percentile": 61.6,
+          "win_rate": 11.6,
+          "podium_rate": 62.8
+        },
+        {
+          "lane": 4,
+          "entries": 43,
+          "finishes": 43,
+          "wins": 15,
+          "podiums": 32,
+          "dqs": 0,
+          "average_place": 2.53,
+          "finish_percentile": 73.8,
+          "win_rate": 34.9,
+          "podium_rate": 74.4
+        },
+        {
+          "lane": 5,
+          "entries": 43,
+          "finishes": 42,
+          "wins": 10,
+          "podiums": 20,
+          "dqs": 1,
+          "average_place": 3.6,
+          "finish_percentile": 56.0,
+          "win_rate": 23.3,
+          "podium_rate": 46.5
+        },
+        {
+          "lane": 6,
+          "entries": 44,
+          "finishes": 42,
+          "wins": 10,
+          "podiums": 21,
+          "dqs": 2,
+          "average_place": 3.43,
+          "finish_percentile": 57.9,
+          "win_rate": 22.7,
+          "podium_rate": 47.7
+        },
+        {
+          "lane": 7,
+          "entries": 39,
+          "finishes": 36,
+          "wins": 0,
+          "podiums": 3,
+          "dqs": 3,
+          "average_place": 5.61,
+          "finish_percentile": 21.8,
+          "win_rate": 0.0,
+          "podium_rate": 7.7
+        }
+      ],
+      "source_url": "https://www.hcrapaddler.com/hcra_results.php?rid=1011&view=bylane",
+      "unmatched_entries": 0
+    },
+    "2025": {
+      "race_id": "1086",
+      "composition": [
+        {
+          "club": "Outrigger Canoe Club",
+          "total": 161,
+          "youth": 40,
+          "novice": 29,
+          "open": 40,
+          "masters": 47,
+          "mixed": 5
+        },
+        {
+          "club": "Lanikai Canoe Club",
+          "total": 203,
+          "youth": 75,
+          "novice": 19,
+          "open": 30,
+          "masters": 70,
+          "mixed": 9
+        },
+        {
+          "club": "Keahiakahoe Canoe Club",
+          "total": 82,
+          "youth": 48,
+          "novice": 4,
+          "open": 14,
+          "masters": 11,
+          "mixed": 5
+        },
+        {
+          "club": "Hui Nalu Canoe Club",
+          "total": 95,
+          "youth": 36,
+          "novice": 2,
+          "open": 23,
+          "masters": 34,
+          "mixed": 0
+        }
+      ],
+      "lanes": [
+        {
+          "lane": 1,
+          "entries": 41,
+          "finishes": 41,
+          "wins": 2,
+          "podiums": 16,
+          "dqs": 0,
+          "average_place": 4.32,
+          "finish_percentile": 44.0,
+          "win_rate": 4.9,
+          "podium_rate": 39.0
+        },
+        {
+          "lane": 2,
+          "entries": 42,
+          "finishes": 39,
+          "wins": 5,
+          "podiums": 16,
+          "dqs": 3,
+          "average_place": 3.95,
+          "finish_percentile": 49.9,
+          "win_rate": 11.9,
+          "podium_rate": 38.1
+        },
+        {
+          "lane": 3,
+          "entries": 43,
+          "finishes": 42,
+          "wins": 7,
+          "podiums": 20,
+          "dqs": 1,
+          "average_place": 3.48,
+          "finish_percentile": 57.2,
+          "win_rate": 16.3,
+          "podium_rate": 46.5
+        },
+        {
+          "lane": 4,
+          "entries": 43,
+          "finishes": 42,
+          "wins": 7,
+          "podiums": 21,
+          "dqs": 1,
+          "average_place": 3.83,
+          "finish_percentile": 52.3,
+          "win_rate": 16.3,
+          "podium_rate": 48.8
+        },
+        {
+          "lane": 5,
+          "entries": 43,
+          "finishes": 41,
+          "wins": 15,
+          "podiums": 27,
+          "dqs": 2,
+          "average_place": 2.83,
+          "finish_percentile": 69.4,
+          "win_rate": 34.9,
+          "podium_rate": 62.8
+        },
+        {
+          "lane": 6,
+          "entries": 43,
+          "finishes": 42,
+          "wins": 4,
+          "podiums": 20,
+          "dqs": 1,
+          "average_place": 3.95,
+          "finish_percentile": 49.9,
+          "win_rate": 9.3,
+          "podium_rate": 46.5
+        },
+        {
+          "lane": 7,
+          "entries": 41,
+          "finishes": 41,
+          "wins": 3,
+          "podiums": 9,
+          "dqs": 0,
+          "average_place": 4.8,
+          "finish_percentile": 36.0,
+          "win_rate": 7.3,
+          "podium_rate": 22.0
+        }
+      ],
+      "source_url": "https://www.hcrapaddler.com/hcra_results.php?rid=1086&view=bylane",
+      "unmatched_entries": 0
+    },
+    "2026": {
+      "race_id": "1197",
+      "composition": [
+        {
+          "club": "Outrigger Canoe Club",
+          "total": 177,
+          "youth": 58,
+          "novice": 26,
+          "open": 30,
+          "masters": 52,
+          "mixed": 11
+        },
+        {
+          "club": "Lanikai Canoe Club",
+          "total": 171,
+          "youth": 65,
+          "novice": 14,
+          "open": 28,
+          "masters": 54,
+          "mixed": 10
+        },
+        {
+          "club": "Keahiakahoe Canoe Club",
+          "total": 125,
+          "youth": 52,
+          "novice": 8,
+          "open": 40,
+          "masters": 23,
+          "mixed": 2
+        },
+        {
+          "club": "Hui Nalu Canoe Club",
+          "total": 89,
+          "youth": 29,
+          "novice": 5,
+          "open": 21,
+          "masters": 32,
+          "mixed": 2
+        }
+      ],
+      "lanes": [
+        {
+          "lane": 1,
+          "entries": 44,
+          "finishes": 38,
+          "wins": 1,
+          "podiums": 4,
+          "dqs": 6,
+          "average_place": 4.76,
+          "finish_percentile": 34.6,
+          "win_rate": 2.3,
+          "podium_rate": 9.1
+        },
+        {
+          "lane": 2,
+          "entries": 43,
+          "finishes": 33,
+          "wins": 5,
+          "podiums": 21,
+          "dqs": 10,
+          "average_place": 3.09,
+          "finish_percentile": 64.1,
+          "win_rate": 11.6,
+          "podium_rate": 48.8
+        },
+        {
+          "lane": 3,
+          "entries": 44,
+          "finishes": 40,
+          "wins": 11,
+          "podiums": 27,
+          "dqs": 4,
+          "average_place": 2.65,
+          "finish_percentile": 71.2,
+          "win_rate": 25.0,
+          "podium_rate": 61.4
+        },
+        {
+          "lane": 4,
+          "entries": 44,
+          "finishes": 41,
+          "wins": 15,
+          "podiums": 33,
+          "dqs": 3,
+          "average_place": 2.37,
+          "finish_percentile": 75.6,
+          "win_rate": 34.1,
+          "podium_rate": 75.0
+        },
+        {
+          "lane": 5,
+          "entries": 44,
+          "finishes": 39,
+          "wins": 9,
+          "podiums": 24,
+          "dqs": 5,
+          "average_place": 3.26,
+          "finish_percentile": 60.9,
+          "win_rate": 20.5,
+          "podium_rate": 54.5
+        },
+        {
+          "lane": 6,
+          "entries": 42,
+          "finishes": 39,
+          "wins": 3,
+          "podiums": 16,
+          "dqs": 3,
+          "average_place": 3.97,
+          "finish_percentile": 49.7,
+          "win_rate": 7.1,
+          "podium_rate": 38.1
+        },
+        {
+          "lane": 7,
+          "entries": 37,
+          "finishes": 32,
+          "wins": 0,
+          "podiums": 7,
+          "dqs": 5,
+          "average_place": 5.16,
+          "finish_percentile": 30.7,
+          "win_rate": 0.0,
+          "podium_rate": 18.9
+        }
+      ],
+      "source_url": "https://www.hcrapaddler.com/hcra_results.php?rid=1197&view=bylane",
+      "unmatched_entries": 0
+    }
+  }
+}
