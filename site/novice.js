@@ -18,7 +18,31 @@ const rosterLabels = [
 const numberFormat = new Intl.NumberFormat("en-US", { maximumFractionDigits: 1 });
 let allRosterEntries = [];
 let rosterEntries = [];
-let selectedRosterGender = "all";
+let selectedRosterGender = "Men";
+let selectedRosterDivision = "AAA";
+let selectedSeasonEvent = "Men Novice B";
+let selectedPaceEvent = "Men Novice B";
+
+const clubDivisions = {
+  "Lanikai Canoe Club": "AAA",
+  "Outrigger Canoe Club": "AAA",
+  "Hui Nalu Canoe Club": "AAA",
+  "Keahiakahoe Canoe Club": "AAA",
+  "Kailua Canoe Club": "AAA",
+  "Leeward Kai Canoe Club": "AAA",
+  "Healani Canoe Club": "AAA",
+  "Waikiki Surf Club": "AA",
+  "Kai Oni Canoe Club": "AA",
+  "Waimanalo Canoe Club": "AA",
+  "Honolulu Pearl Canoe Club": "AA",
+  "Koa Kai Canoe Club": "A",
+  "Hui Lanakila Canoe Club": "A",
+  "Keola O Ke Kai Canoe Club": "A",
+  "New Hope Canoe Club": "A",
+  "Ewa Pu`uloa Outrigger": "A",
+  "Anuenue Canoe Club": "A",
+  "Makaha Canoe Club": "A",
+};
 
 function fmt(value) {
   return numberFormat.format(value);
@@ -135,21 +159,20 @@ function applyEvidenceFilters() {
         .join("")
     : `<tr><td colspan="8">No race entries match these filters.</td></tr>`;
 }
+function eventSwitcher(target, selected, attribute) {
+  document.querySelector(target).innerHTML = eventOrder.map((eventName) =>
+    `<button type="button" data-${attribute}="${eventName}" class="${eventName === selected ? "is-active" : ""}" aria-pressed="${eventName === selected}">${eventName}</button>`
+  ).join("");
+}
+
 function renderSeasonCards(data) {
-  document.querySelector("#novice-event-stack").innerHTML = eventOrder
-    .map((eventName) => {
-      const cards = data.season_competitiveness[eventName].map(yearCard).join("");
-      return `
-        <section class="novice-event-block">
-          <div>
-            <p class="section-kicker">${eventName}</p>
-            <h3>${eventName} by season</h3>
-          </div>
-          <div class="year-card-grid">${cards}</div>
-        </section>
-      `;
-    })
-    .join("");
+  eventSwitcher("#season-event-switcher", selectedSeasonEvent, "season-event");
+  const cards = data.season_competitiveness[selectedSeasonEvent].map(yearCard).join("");
+  document.querySelector("#novice-event-stack").innerHTML = `
+    <section class="novice-event-block">
+      <div><p class="section-kicker">${selectedSeasonEvent}</p><h3>${selectedSeasonEvent} by season</h3></div>
+      <div class="year-card-grid">${cards}</div>
+    </section>`;
 }
 
 function paceTime(value) {
@@ -159,17 +182,18 @@ function paceTime(value) {
 }
 
 function renderNovicePace(data) {
-  const analysis = data.novice_b_pace;
-  document.querySelector("#novice-pace-grid").innerHTML = ["Men Novice B", "Women Novice B"]
+  const analysis = data.novice_pace;
+  eventSwitcher("#pace-event-switcher", selectedPaceEvent, "pace-event");
+  document.querySelector("#novice-pace-grid").innerHTML = [selectedPaceEvent]
     .map((eventName) => {
       const seasons = analysis.seasons[eventName];
-      const comparable = seasons.filter((item) => eventName.startsWith("Women") || item.era === "quarter_mile");
+      const comparable = seasons.filter((item) => eventName !== "Men Novice B" || item.era === "quarter_mile");
       const fastest = comparable.reduce((best, item) => item.pace_index > best.pace_index ? item : best);
       const rows = seasons.map((item) => {
         const position = Math.max(0, Math.min(100, ((item.pace_index - 90) / 20) * 100));
         const difference = item.difference_from_era_pct;
         const paceLabel = difference > 0.05 ? `${fmt(difference)}% faster` : difference < -0.05 ? `${fmt(Math.abs(difference))}% slower` : "typical";
-        const isolated = eventName.startsWith("Men") && item.era === "half_mile";
+        const isolated = eventName === "Men Novice B" && item.era === "half_mile";
         return `
           <div class="pace-year-row ${isolated ? "pace-isolated" : ""}">
             <div class="pace-year"><strong>${item.season}</strong><small>${item.distance_label}</small></div>
@@ -181,7 +205,7 @@ function renderNovicePace(data) {
       return `
         <article class="pace-card">
           <div class="pace-card-head"><div><p class="section-kicker">${eventName}</p><h3>${fastest.season} set the fastest comparable pace</h3></div><strong>${fastest.pace_index}</strong></div>
-          <p>${eventName.startsWith("Men") ? "Quarter-mile comparison uses 2024 onward; 2023 is shown only as its half-mile baseline." : "All four seasons use the quarter-mile comparison."}</p>
+          <p>${eventName === "Men Novice B" ? "Quarter-mile comparison uses 2024 onward; 2023 is shown only as its half-mile baseline." : `All four seasons use the same ${seasons[0].distance_label} comparison era.`}</p>
           <div class="pace-year-list">${rows}</div>
         </article>`;
     })
@@ -233,21 +257,24 @@ function renderRosterTeams(data) {
   populateRosterFilters(allTeams);
 
   const teams = allTeams.filter(
-    (team) => selectedRosterGender === "all" || noviceGender(team.event) === selectedRosterGender
+    (team) =>
+      (selectedRosterGender === "all" || noviceGender(team.event) === selectedRosterGender) &&
+      (selectedRosterDivision === "all" || clubDivisions[team.club] === selectedRosterDivision)
   );
 
   const firstLeans = teams.filter((team) => team.lean === "mostly_first_year_a").length;
   const secondLeans = teams.filter((team) => team.lean === "mostly_second_year_a").length;
   const genderPhrase = selectedRosterGender === "all" ? "" : `${selectedRosterGender.toLowerCase()} `;
+  const divisionPhrase = selectedRosterDivision === "all" ? "" : ` in Division ${selectedRosterDivision}`;
   document.querySelector("#roster-story").textContent =
-    `Using 2025 OHCRA season-standing rosters as the lookback, ${firstLeans} ${genderPhrase}club-event crews lean first-year Novice A and ${secondLeans} lean second-year Novice A. Unknowns usually mean the paddler did not appear in the downloaded same-gender novice history, not that they are ineligible.`;
+    `Using 2025 OHCRA season-standing rosters as the lookback, ${firstLeans} ${genderPhrase}club-event crews${divisionPhrase} lean first-year Novice A and ${secondLeans} lean second-year Novice A. Unknowns usually mean the paddler did not appear in the downloaded novice history for that program, not that they are ineligible.`;
 
   document.querySelector("#roster-team-grid").innerHTML = teams.length
     ? teams
         .map(
           (team) => `
             <article class="roster-card">
-              <small>${team.event}</small>
+              <small>${team.event} · Division ${clubDivisions[team.club] ?? "not assigned"}</small>
               <h3>${team.club}</h3>
               <p>${fmt(team.points)} ${unit(team.points, "point")} - ${team.entries} ${unit(team.entries, "entry", "entries")} - ${team.wins} ${unit(team.wins, "win")} - ${team.podiums} ${unit(team.podiums, "podium")}</p>
               <div class="composition-bar">${compositionBars(team)}</div>
@@ -284,11 +311,11 @@ function openCrewDetail(index) {
   if (!entry) return;
 
   const groups = [
-    ["first_year_a", "First-year A signal", "Appeared in same-gender Novice B in 2025."],
-    ["second_year_a", "Second-year A signal", "Appeared in same-gender Novice A in 2025."],
-    ["prior_a_history", "Prior A history", "Appeared in same-gender Novice A before 2025."],
-    ["prior_b_history", "Prior B history", "Appeared in same-gender Novice B before 2025."],
-    ["unknown", "Unknown", "No same-gender novice history found in the downloaded data."],
+    ["first_year_a", "First-year A signal", "Appeared in Novice B in 2025 for this program."],
+    ["second_year_a", "Second-year A signal", "Appeared in Novice A in 2025 for this program."],
+    ["prior_a_history", "Prior A history", "Appeared in Novice A before 2025 for this program."],
+    ["prior_b_history", "Prior B history", "Appeared in Novice B before 2025 for this program."],
+    ["unknown", "Unknown", "No novice history found for this program in the downloaded data."],
   ];
 
   document.querySelector("#crew-sheet-kicker").textContent = entry.event;
@@ -324,8 +351,18 @@ function closeCrewDetail() {
   document.body.classList.remove("modal-open");
 }
 
+function openPaceExplanation() {
+  document.querySelector("#pace-explanation-modal").setAttribute("aria-hidden", "false");
+  document.body.classList.add("modal-open");
+}
+
+function closePaceExplanation() {
+  document.querySelector("#pace-explanation-modal").setAttribute("aria-hidden", "true");
+  document.body.classList.remove("modal-open");
+}
+
 async function init() {
-  const response = await fetch("data/novice.json?v=novice-roster-filter1");
+  const response = await fetch("data/novice.json?v=novice-pace-explanation5");
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const data = await response.json();
 
@@ -334,8 +371,27 @@ async function init() {
   renderRosterTeams(data);
   renderRosterEntries(data);
 
+  document.querySelector("#season-event-switcher").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-season-event]");
+    if (!button) return;
+    selectedSeasonEvent = button.dataset.seasonEvent;
+    renderSeasonCards(data);
+  });
+
+  document.querySelector("#pace-event-switcher").addEventListener("click", (event) => {
+    const button = event.target.closest("[data-pace-event]");
+    if (!button) return;
+    selectedPaceEvent = button.dataset.paceEvent;
+    renderNovicePace(data);
+  });
+
   document.querySelector("#roster-gender-filter").addEventListener("change", (event) => {
     selectedRosterGender = event.target.value;
+    renderRosterTeams(data);
+  });
+
+  document.querySelector("#roster-division-filter").addEventListener("change", (event) => {
+    selectedRosterDivision = event.target.value;
     renderRosterTeams(data);
   });
 
@@ -352,8 +408,16 @@ async function init() {
     button.addEventListener("click", closeCrewDetail);
   });
 
+  document.querySelector("#pace-explanation-button").addEventListener("click", openPaceExplanation);
+  document.querySelectorAll("[data-close-pace-explanation]").forEach((button) => {
+    button.addEventListener("click", closePaceExplanation);
+  });
+
   document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") closeCrewDetail();
+    if (event.key === "Escape") {
+      closeCrewDetail();
+      closePaceExplanation();
+    }
   });
 }
 

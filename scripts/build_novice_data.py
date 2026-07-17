@@ -214,8 +214,8 @@ def top_three_median(group: list[dict[str, Any]]) -> float | None:
     return float(finishers[1]["time_seconds"])
 
 
-def novice_b_pace(rows: list[dict[str, Any]]) -> dict[str, Any]:
-    """Compare front-of-field Novice B pace after a robust race-day adjustment."""
+def novice_pace(rows: list[dict[str, Any]]) -> dict[str, Any]:
+    """Compare front-of-field novice pace after a robust race-day adjustment."""
     by_race_event: dict[tuple[int, str, int], list[dict[str, Any]]] = defaultdict(list)
     for row in rows:
         by_race_event[(row["season"], row["race_id"], row["event_number"])].append(row)
@@ -251,7 +251,7 @@ def novice_b_pace(rows: list[dict[str, Any]]) -> dict[str, Any]:
     for season, race_id in {(item["season"], item["race_id"]) for item in observations}:
         ratios = []
         for item in observations:
-            if item["season"] != season or item["race_id"] != race_id or novice_event(item["event_name"]) in {"Men Novice B", "Women Novice B"}:
+            if item["season"] != season or item["race_id"] != race_id or novice_event(item["event_name"]) in TARGET_EVENTS:
                 continue
             baseline = event_baselines.get((season, item["event_name"]))
             if baseline:
@@ -267,13 +267,18 @@ def novice_b_pace(rows: list[dict[str, Any]]) -> dict[str, Any]:
     target_races = []
     for item in observations:
         event = novice_event(item["event_name"])
-        if event not in {"Men Novice B", "Women Novice B"}:
+        if event not in TARGET_EVENTS:
             continue
         factor = race_factors.get((item["season"], item["race_id"]))
         if factor is None:
             continue
         gender = event.split()[0]
-        era = "half_mile" if gender == "Men" and item["season"] < 2024 else "quarter_mile"
+        if event == "Men Novice B":
+            era = "half_mile" if item["season"] < 2024 else "quarter_mile"
+        elif event == "Women Novice B":
+            era = "quarter_mile"
+        else:
+            era = "half_mile"
         target_races.append({
             **item,
             "event": event,
@@ -285,18 +290,18 @@ def novice_b_pace(rows: list[dict[str, Any]]) -> dict[str, Any]:
         })
 
     era_baselines = {}
-    for gender in ("Men", "Women"):
+    for event in TARGET_EVENTS:
         for era in ("half_mile", "quarter_mile"):
-            values = [item["adjusted_pace"] for item in target_races if item["gender"] == gender and item["era"] == era]
+            values = [item["adjusted_pace"] for item in target_races if item["event"] == event and item["era"] == era]
             if values:
-                era_baselines[(gender, era)] = median(values)
+                era_baselines[(event, era)] = median(values)
 
-    seasons = {"Men Novice B": [], "Women Novice B": []}
+    seasons = {event: [] for event in TARGET_EVENTS}
     for event in seasons:
         for season in sorted({item["season"] for item in target_races if item["event"] == event}):
             items = [item for item in target_races if item["event"] == event and item["season"] == season]
             era = items[0]["era"]
-            baseline = era_baselines[(items[0]["gender"], era)]
+            baseline = era_baselines[(event, era)]
             adjusted = median(item["adjusted_pace"] for item in items)
             raw = median(item["pace"] for item in items)
             index = 100 * baseline / adjusted
@@ -318,7 +323,7 @@ def novice_b_pace(rows: list[dict[str, Any]]) -> dict[str, Any]:
         "method": {
             "headline_metric": "Median second-place time, adjusted by same-day course factor",
             "index_definition": "100 is the typical pace within the same gender and distance era; above 100 is faster.",
-            "distance_note": "Men Novice B is treated as 1/2 mile through 2023 and 1/4 mile from 2024; Women Novice B is treated as 1/4 mile throughout this dataset.",
+            "distance_note": "Men Novice B is treated as 1/2 mile through 2023 and 1/4 mile from 2024. Women Novice B is treated as 1/4 mile throughout. Men and Women Novice A remain in one consistent 1/2-mile era.",
             "minimum_benchmark_events": 8,
         },
         "seasons": seasons,
@@ -492,15 +497,15 @@ def main() -> None:
             "races": len({row["race_id"] for row in core_rows}),
             "excluded_special_races": special_race_summary(rows),
             "classification_notes": {
-                "first_year_a": f"Appeared in the same-gender Novice B roster in {PRIOR_SEASON}.",
-                "second_year_a": f"Appeared in the same-gender Novice A roster in {PRIOR_SEASON}.",
-                "prior_a_history": f"Appeared in same-gender Novice A before {PRIOR_SEASON}.",
-                "prior_b_history": f"Appeared in same-gender Novice B before {PRIOR_SEASON}.",
-                "unknown": "No same-gender novice history found in the downloaded roster data.",
+                "first_year_a": f"Appeared in the corresponding Novice B roster in {PRIOR_SEASON}.",
+                "second_year_a": f"Appeared in the corresponding Novice A roster in {PRIOR_SEASON}.",
+                "prior_a_history": f"Appeared in the corresponding Novice A program before {PRIOR_SEASON}.",
+                "prior_b_history": f"Appeared in the corresponding Novice B program before {PRIOR_SEASON}.",
+                "unknown": "No novice history found for that program in the downloaded roster data.",
             },
         },
         "season_competitiveness": season_competitiveness(core_rows),
-        "novice_b_pace": novice_b_pace(core_rows),
+        "novice_pace": novice_pace(core_rows),
         "current_roster_composition": roster_composition(core_rows),
     }
 

@@ -850,6 +850,12 @@ th:last-child {
 
 /* Novice B adjusted pace */
 .novice-pace-section { background: #edf4f1; }
+.novice-switcher { display: flex; flex-wrap: wrap; gap: 8px; margin: 20px 0; }
+.novice-switcher button { background: var(--panel); border: 1px solid var(--accent-dark); color: var(--accent-dark); cursor: pointer; font: inherit; font-size: .82rem; font-weight: 900; padding: 9px 12px; }
+.novice-switcher button.is-active { background: var(--accent-dark); color: white; }
+.pace-guide { display: grid; gap: 10px; grid-template-columns: repeat(3, 1fr); margin-top: 22px; }
+.pace-guide article { background: rgba(255,255,255,.72); border-left: 4px solid var(--accent); padding: 12px; }
+.pace-guide p { color: var(--muted); font-size: .8rem; line-height: 1.45; margin-top: 5px; }
 .pace-legend { color: var(--muted); display: flex; font-size: .72rem; justify-content: space-between; margin: 24px 145px 8px 78px; }
 .novice-pace-grid { display: grid; gap: 18px; margin-top: 8px; }
 .pace-card { background: var(--panel); border: 1px solid var(--line); padding: 18px; }
@@ -868,7 +874,20 @@ th:last-child {
 .pace-result strong { font-size: 1.15rem; }
 .pace-details { color: var(--muted); display: grid; font-size: .72rem; gap: 4px; grid-template-columns: repeat(3, 1fr); }
 .pace-isolated { border-top: 1px dashed var(--line); padding-top: 12px; }
+.roster-explainer { background: #f4f0e8; border-left: 5px solid var(--gold); margin: 18px 0; padding: 14px 16px; }
+.roster-explainer p { color: var(--muted); line-height: 1.5; margin-top: 5px; }
+.pace-explanation-button { background: var(--accent-dark); border: 0; color: white; cursor: pointer; font: inherit; font-size: .86rem; font-weight: 900; margin-top: 16px; padding: 11px 14px; }
+.pace-explanation-button:hover, .pace-explanation-button:focus-visible { background: var(--accent); }
+.pace-explanation-sheet { max-width: 980px; width: min(980px, calc(100vw - 32px)); }
+.pace-explanation-content { display: grid; gap: 24px; }
+.pace-explanation-content section { display: grid; gap: 10px; }
+.pace-explanation-content h3 { font-size: 1.15rem; }
+.pace-explanation-content p { color: var(--muted); line-height: 1.55; }
+.pace-explanation-content table { min-width: 660px; }
+.pace-formula { background: var(--wash); border-left: 4px solid var(--accent); color: var(--ink) !important; font-family: Consolas, monospace; font-weight: 800; padding: 10px 12px; }
+.pace-seconds-callout { background: #f4f0e8; border-left: 5px solid var(--gold); padding: 16px; }
 @media (max-width: 760px) {
+  .pace-guide { grid-template-columns: 1fr; }
   .pace-legend { margin-left: 70px; margin-right: 0; }
   .pace-year-row { grid-template-columns: 48px minmax(110px, 1fr) 80px; }
   .pace-details { grid-column: 2 / 4; }

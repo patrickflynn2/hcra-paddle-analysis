@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>HCRA Novice Story</title>
     <link rel="stylesheet" href="styles.css" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S1N1E1MP09"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-S1N1E1MP09');
+    </script>
   </head>
   <body>
     <header class="story-hero novice-hero">
       <nav class="site-nav" aria-label="Site">
         <a href="qualification.html">States Qualification</a>
-        <a href="analysis.html">Club Analysis</a>
-        <a href="novice.html" aria-current="page">Novice Program</a>
         <a href="macfarlane.html">Macfarlane</a>
+        <a href="novice.html" aria-current="page">Novice Program</a>
+        <a href="analysis.html">Club Analysis</a>
         <a href="dqs.html">DQs</a>
         <a href="index.html">Explorer</a>
       </nav>
@@ -34,35 +42,56 @@
         <p class="story-copy">
           Winning time is shown, but margins and entries are the better comparison across regattas because course length and conditions vary. Walter J. MacFarlane and HCRA State Championship results are excluded here and preserved for separate analysis.
         </p>
+        <div class="novice-switcher" id="season-event-switcher" aria-label="Choose novice event"></div>
         <div class="novice-event-stack" id="novice-event-stack"></div>
       </section>
 
       <section class="story-section novice-pace-section">
         <p class="section-kicker">Adjusted competitive pace</p>
-        <h2>Was the front of the Novice B field faster or slower than other years?</h2>
+        <h2>Was the front of each Novice A or B field faster or slower than other years?</h2>
         <p class="story-copy">
-          The headline measure is the median of the top three boats—the second-place time—adjusted by how fast or slow a broad basket of other events ran that same day. An index above 100 is faster than the typical season in the same distance era. Men’s 2023 half-mile results are kept separate from the quarter-mile years.
+          The headline measure is the median of the top three boats—the second-place time—adjusted by how fast or slow a broad basket of other events ran that same day. An index above 100 is faster than the typical season in the same event and distance era. Men Novice B’s 2023 half-mile results are kept separate from the quarter-mile years.
         </p>
+        <div class="pace-guide" aria-label="How to interpret the pace chart">
+          <article><strong>1. Start at 100</strong><p>100 is the typical adjusted pace for that event and distance. A dot to the right is faster; a dot to the left is slower.</p></article>
+          <article><strong>2. Read the percentage</strong><p>An index of 104 means the front of the field was about 4% faster than its comparison baseline after the race-day adjustment.</p></article>
+          <article><strong>3. Check the context</strong><p>Raw time shows what the clock recorded. The first-to-third gap shows front-field depth, and race count shows how much evidence supports the season.</p></article>
+        </div>
+        <div class="novice-switcher" id="pace-event-switcher" aria-label="Choose adjusted pace event"></div>
         <div class="pace-legend" aria-label="Pace index scale"><span>90 · slower</span><span>100 · typical</span><span>110 · faster</span></div>
         <div class="novice-pace-grid" id="novice-pace-grid"></div>
         <p class="race-note">This is a comparative indicator, not a claim about absolute boat speed. It reduces the influence of slow final boats and unusual race-day conditions; races need three valid finishers and at least eight benchmark events.</p>
+        <button class="pace-explanation-button" id="pace-explanation-button" type="button">Full explanation for Sam and Ryan's argument about who is cooler</button>
       </section>
 
       <section class="story-section">
         <p class="section-kicker">This season's Novice A rosters</p>
         <h2>Which 2026 Novice A crews look first-year versus second-year?</h2>
         <p class="story-copy" id="roster-story"></p>
+        <aside class="roster-explainer">
+          <strong>Unique paddlers versus appearances</strong>
+          <p>“Unique paddlers” counts people once. “Appearances” counts every race they entered. For example, if Patrick and Ryan raced five times each and JP raced three times, that is <strong>3 unique first-year A paddlers with 13 appearances</strong>.</p>
+        </aside>
         <div class="legend-row">
           <span><i class="legend first"></i> First-year A signal</span>
           <span><i class="legend second"></i> Second-year A signal</span>
           <span><i class="legend history"></i> Older novice history</span>
           <span><i class="legend unknown"></i> Unknown</span>
         </div>
-                <div class="evidence-filters roster-filters" aria-label="Novice A roster filters">
+        <div class="evidence-filters roster-filters" aria-label="Novice A roster filters">
           <label>
             Gender
             <select id="roster-gender-filter">
               <option value="all">All genders</option>
+            </select>
+          </label>
+          <label>
+            Division
+            <select id="roster-division-filter">
+              <option value="all">All divisions</option>
+              <option value="AAA" selected>Division AAA</option>
+              <option value="AA">Division AA</option>
+              <option value="A">Division A</option>
             </select>
           </label>
         </div>
@@ -73,7 +102,7 @@
         <p class="section-kicker">Race evidence</p>
         <h2>Entry-by-entry roster composition makes the inference auditable.</h2>
         <p class="story-copy">
-          A paddler is counted as first-year Novice A if they appeared in same-gender Novice B in 2025, and second-year Novice A if they appeared in same-gender Novice A in 2025.
+          A paddler is counted as first-year Novice A if they appeared in Novice B in 2025, and second-year Novice A if they appeared in Novice A in 2025. The classification follows the Men or Women program shown for that crew.
         </p>
                 <div class="evidence-filters" aria-label="Race evidence filters">
           <label>
@@ -132,7 +161,80 @@
       </section>
     </div>
 
-    <script src="novice.js?v=novice-roster-filter1"></script>
+    <div class="crew-modal" id="pace-explanation-modal" aria-hidden="true">
+      <button class="crew-modal-backdrop" type="button" data-close-pace-explanation aria-label="Close pace explanation"></button>
+      <section class="crew-sheet pace-explanation-sheet" role="dialog" aria-modal="true" aria-labelledby="pace-explanation-title">
+        <div class="crew-sheet-handle" aria-hidden="true"></div>
+        <div class="crew-sheet-header">
+          <div>
+            <p class="section-kicker">Men Novice A · 2025 versus 2026</p>
+            <h2 id="pace-explanation-title">Full explanation for Sam and Ryan's argument about who is cooler</h2>
+            <p>Here is how the chart produces a 2025 pace index of 101.3 and a 2026 pace index of 97.2.</p>
+          </div>
+          <button class="icon-close" type="button" data-close-pace-explanation aria-label="Close pace explanation">x</button>
+        </div>
+
+        <div class="pace-explanation-content">
+          <section>
+            <h3>1. Represent each race with the second-place time</h3>
+            <p>The “top-three median” is the middle time among first, second, and third place—so it is simply the second-place time. This avoids letting one exceptional winner or a slow final boat control the result.</p>
+            <div class="table-wrap story-table"><table><thead><tr><th>Year</th><th>Regatta</th><th>1st</th><th>2nd / top-3 median</th><th>3rd</th></tr></thead><tbody>
+              <tr><td>2025</td><td>Pai‘aina</td><td>3:48.13</td><td>3:50.31</td><td>3:53.14</td></tr>
+              <tr><td>2025</td><td>Kamehameha</td><td>3:55.43</td><td>3:57.70</td><td>4:02.66</td></tr>
+              <tr><td>2025</td><td>Father’s Day</td><td>3:46.35</td><td>3:47.01</td><td>3:50.07</td></tr>
+              <tr><td>2025</td><td>Waimanalo</td><td>4:12.88</td><td>4:17.07</td><td>4:17.45</td></tr>
+              <tr><td>2025</td><td>Kaupiko</td><td>3:49.99</td><td>3:50.78</td><td>3:52.17</td></tr>
+              <tr><td>2025</td><td>OHCRA Championship</td><td>3:43.21</td><td>3:44.14</td><td>3:44.55</td></tr>
+              <tr><td>2026</td><td>Pai‘aina</td><td>4:01.35</td><td>4:06.96</td><td>4:07.23</td></tr>
+              <tr><td>2026</td><td>Kamehameha</td><td>4:05.53</td><td>4:06.83</td><td>4:12.05</td></tr>
+              <tr><td>2026</td><td>Father’s Day</td><td>3:45.69</td><td>3:46.92</td><td>3:49.64</td></tr>
+              <tr><td>2026</td><td>Waimanalo</td><td>4:05.44</td><td>4:06.73</td><td>4:14.17</td></tr>
+              <tr><td>2026</td><td>Kaupiko</td><td>3:52.80</td><td>3:53.87</td><td>3:55.66</td></tr>
+            </tbody></table></div>
+          </section>
+
+          <section>
+            <h3>2. Estimate whether each regatta ran fast or slow</h3>
+            <p>For approximately 37–40 non-novice benchmark events at each regatta, the calculation compares that event’s top-three median with its median elsewhere in the same season. The median of those ratios becomes the race-day factor. A factor of 1.00 is typical, above 1.00 means the day ran slower, and below 1.00 means it ran faster.</p>
+            <p>For example, Waimanalo 2025 had a factor of 1.0661, meaning events ran about 6.6% slower than their season norms. Father’s Day 2026 had a factor of 0.9579, meaning events ran about 4.2% faster.</p>
+          </section>
+
+          <section>
+            <h3>3. Adjust each Men Novice A time</h3>
+            <p class="pace-formula">Adjusted time = second-place time ÷ race-day factor</p>
+            <div class="table-wrap story-table"><table><thead><tr><th>Year</th><th>Regatta</th><th>Raw second</th><th>Race factor</th><th>Adjusted time</th></tr></thead><tbody>
+              <tr><td>2025</td><td>Pai‘aina</td><td>230.31s</td><td>0.9765</td><td>235.85s</td></tr>
+              <tr><td>2025</td><td>Kamehameha</td><td>237.70s</td><td>1.0319</td><td>230.34s</td></tr>
+              <tr><td>2025</td><td>Father’s Day</td><td>227.01s</td><td>0.9835</td><td>230.82s</td></tr>
+              <tr><td>2025</td><td>Waimanalo</td><td>257.07s</td><td>1.0661</td><td>241.14s</td></tr>
+              <tr><td>2025</td><td>Kaupiko</td><td>230.78s</td><td>1.0055</td><td>229.52s</td></tr>
+              <tr><td>2025</td><td>OHCRA Championship</td><td>224.14s</td><td>0.9868</td><td>227.14s</td></tr>
+              <tr><td>2026</td><td>Pai‘aina</td><td>246.96s</td><td>1.0000</td><td>246.96s</td></tr>
+              <tr><td>2026</td><td>Kamehameha</td><td>246.83s</td><td>1.0135</td><td>243.54s</td></tr>
+              <tr><td>2026</td><td>Father’s Day</td><td>226.92s</td><td>0.9579</td><td>236.90s</td></tr>
+              <tr><td>2026</td><td>Waimanalo</td><td>246.73s</td><td>1.0269</td><td>240.26s</td></tr>
+              <tr><td>2026</td><td>Kaupiko</td><td>233.87s</td><td>1.0000</td><td>233.87s</td></tr>
+            </tbody></table></div>
+            <p>Waimanalo 2025 looked extremely slow at 4:17.07, but other events were also slow, so its adjusted time becomes 4:01.14. Father’s Day 2026 looked fast at 3:46.92, but the whole regatta ran fast, so its adjusted time becomes 3:56.90.</p>
+          </section>
+
+          <section>
+            <h3>4. Calculate each season’s competitive pace</h3>
+            <p>The median adjusted time is <strong>230.58 seconds (3:50.58) for 2025</strong> and <strong>240.26 seconds (4:00.26) for 2026</strong>. The 2023–2026 comparison baseline is 233.62 seconds.</p>
+            <p class="pace-formula">Pace index = baseline ÷ season adjusted time × 100</p>
+            <p>2025: 233.62 ÷ 230.58 × 100 = <strong>101.3</strong><br />2026: 233.62 ÷ 240.26 × 100 = <strong>97.2</strong></p>
+          </section>
+
+          <section class="pace-seconds-callout">
+            <h3>What does 2.8% slower mean in seconds?</h3>
+            <p>The 2026 adjusted median is <strong>240.26 seconds</strong>, while the four-year baseline is <strong>233.62 seconds</strong>. That is <strong>6.64 seconds slower than the baseline</strong>. Compared directly with 2025’s adjusted median of 230.58 seconds, 2026 is <strong>9.68 seconds slower</strong>, or about 4.2% slower.</p>
+            <p>One caveat: 2025 contains six races, while 2026 currently contains five, so the 2026 result can still change when another qualifying race is added.</p>
+          </section>
+        </div>
+      </section>
+    </div>
+
+    <script src="novice.js?v=novice-pace-explanation5"></script>
   </body>
 </html>
 
