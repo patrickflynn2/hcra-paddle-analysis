@@ -1,7 +1,16 @@
 ﻿const fmt = new Intl.NumberFormat("en-US", { maximumFractionDigits: 1 });
 const pctFmt = new Intl.NumberFormat("en-US", { style: "percent", maximumFractionDigits: 1 });
 let selectedRaceYear = "all";
+let selectedClubDivision = "AAA";
 let dqData = null;
+
+const clubDivisions = {
+  "Lanikai Canoe Club": "AAA", "Outrigger Canoe Club": "AAA", "Hui Nalu Canoe Club": "AAA",
+  "Keahiakahoe Canoe Club": "AAA", "Kailua Canoe Club": "AAA", "Leeward Kai Canoe Club": "AAA", "Healani Canoe Club": "AAA",
+  "Waikiki Surf Club": "AA", "Kai Oni Canoe Club": "AA", "Waimanalo Canoe Club": "AA", "Honolulu Pearl Canoe Club": "AA",
+  "Koa Kai Canoe Club": "A", "Hui Lanakila Canoe Club": "A", "Keola O Ke Kai Canoe Club": "A", "New Hope Canoe Club": "A",
+  "Ewa Pu`uloa Outrigger": "A", "Anuenue Canoe Club": "A", "Makaha Canoe Club": "A",
+};
 
 const programLabels = {
   youth: "Youth program",
@@ -94,12 +103,21 @@ function renderRaceView(data) {
 
 function renderClubView(data) {
   const clubs = [...data.clubs]
+    .filter((club) => selectedClubDivision === "all" || clubDivisions[club.club] === selectedClubDivision)
     .sort((a, b) => a.dq_rate - b.dq_rate || a.dq_count - b.dq_count || a.club.localeCompare(b.club))
     .slice(0, 12);
   const best = clubs[0];
 
+  if (!best) {
+    document.querySelector("#club-intro").textContent = "No clubs with DQs are listed in this division.";
+    document.querySelector("#dq-club-grid").innerHTML = "";
+    return;
+  }
+
+  const divisionLabel = selectedClubDivision === "all" ? "all divisions" : `Division ${selectedClubDivision}`;
+
   document.querySelector("#club-intro").textContent =
-    `${best.club} has the lowest DQ ratio among clubs with DQs in this dataset: ${best.dq_count} DQs across ${best.entry_count} entered events (${pct(best.dq_rate)}). Cards are ranked from lowest ratio to highest.`;
+    `${best.club} has the lowest DQ ratio among clubs with DQs in ${divisionLabel}: ${best.dq_count} DQs across ${best.entry_count} entered events (${pct(best.dq_rate)}). Cards are ranked from lowest ratio to highest.`;
 
   document.querySelector("#dq-club-grid").innerHTML = clubs
     .map(
@@ -242,6 +260,11 @@ async function init() {
     if (!button) return;
     selectedRaceYear = button.dataset.raceYear;
     renderRaceView(dqData);
+  });
+
+  document.querySelector("#dq-division-filter").addEventListener("change", (event) => {
+    selectedClubDivision = event.target.value;
+    renderClubView(dqData);
   });
 }
 

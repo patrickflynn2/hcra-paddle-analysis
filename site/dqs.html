@@ -22,7 +22,6 @@
         <a href="novice.html">Novice Program</a>
         <a href="analysis.html">Club Analysis</a>
         <a href="dqs.html" aria-current="page">DQs</a>
-        <a href="index.html">Explorer</a>
       </nav>
       <div class="story-hero-text">
         <p class="eyebrow">Disqualification review</p>
@@ -78,6 +77,14 @@
       <section class="story-section">
         <p class="section-kicker">Club view</p>
         <h2>Which clubs have the least amount of DQs?</h2>
+        <label class="dq-division-filter">Club division
+          <select id="dq-division-filter">
+            <option value="AAA" selected>Division AAA</option>
+            <option value="AA">Division AA</option>
+            <option value="A">Division A</option>
+            <option value="all">All divisions</option>
+          </select>
+        </label>
         <p class="story-copy" id="club-intro"></p>
         <div class="dq-club-grid" id="dq-club-grid"></div>
       </section>
@@ -110,7 +117,7 @@
       </section>
     </main>
 
-    <script src="dqs.js?v=dq-refresh-2026-1198"></script>
+    <script src="dqs.js?v=dq-division-filter1"></script>
   </body>
 </html>
 

@@ -362,7 +362,7 @@ function closePaceExplanation() {
 }
 
 async function init() {
-  const response = await fetch("data/novice.json?v=novice-pace-explanation5");
+  const response = await fetch("data/novice.json?v=novice-pace-explanation6");
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const data = await response.json();
 

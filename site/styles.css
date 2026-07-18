@@ -886,6 +886,9 @@ th:last-child {
 .pace-explanation-content table { min-width: 660px; }
 .pace-formula { background: var(--wash); border-left: 4px solid var(--accent); color: var(--ink) !important; font-family: Consolas, monospace; font-weight: 800; padding: 10px 12px; }
 .pace-seconds-callout { background: #f4f0e8; border-left: 5px solid var(--gold); padding: 16px; }
+.pace-explanation-divider { align-items: center; display: flex; gap: 14px; margin: 8px 0; }
+.pace-explanation-divider::before, .pace-explanation-divider::after { background: var(--line); content: ""; flex: 1; height: 1px; }
+.pace-explanation-divider span { color: var(--accent-dark); font-size: .8rem; font-weight: 900; letter-spacing: .08em; text-transform: uppercase; }
 @media (max-width: 760px) {
   .pace-guide { grid-template-columns: 1fr; }
   .pace-legend { margin-left: 70px; margin-right: 0; }
@@ -1442,6 +1445,11 @@ th:last-child {
   min-width: 420px;
 }
 
+.dq-legend-table th:first-child,
+.dq-legend-table td:first-child {
+  width: 30px;
+}
+
 .dq-legend-table td:first-child strong {
   color: var(--coral);
   font-size: 1rem;
@@ -1458,6 +1466,9 @@ th:last-child {
   gap: 12px;
   grid-template-columns: repeat(3, minmax(150px, 1fr));
 }
+
+.dq-division-filter { margin: 18px 0; max-width: 220px; }
+.lane-filter-hint { color: #133f4a; font-size: .86rem; font-weight: 900; margin: 10px 0 5px; }
 
 .evidence-filters label {
   color: var(--muted);
